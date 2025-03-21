@@ -1,11 +1,12 @@
 class SwiggyRunner{
 
-public static void main(String swiggy[]){
+public static void main(String[] swi){
+String foodStarters = null;
+double ref = Swiggy.takeOrder("Panner Tikka");
+System.out.println("The price of the foodStarter is :" +ref);
 
-double msg = Swiggy.takeOrder("Burger");
-System.out.println("The price of one burger is:" +msg);
+double msg = Swiggy.takeOrder("Panner Tikka",5);
+System.out.println("The price of the pizza is :" +msg);
 
-double ref = Swiggy.takeOrder("Burger",5);
-System.out.println("The price of the burger quantity is:" +ref);
 }
 }
