@@ -1,28 +1,20 @@
 class Radio {
 
-static String brand = "PHILIPS";
-static String color = "Grey";
-static String specialFeature = "Portable, Lightweight, Built-In AM Antenna";
 public static void main(String hha[]){
 
-System.out.println("Before reinitialize");
-System.out.println("The brand of the Radio is:" +brand);
-System.out.println("The color of the Radio is:" +color);
-System.out.println("The specialFeature is:" +specialFeature);
-		
-brand = "Greadio";
-color = "Black";
-specialFeature = "LCD Display, Time Setting";
+String brand = "PHILIPS";
+String color = "Grey";
+String specialFeature = "Portable, Lightweight, Built-In AM Antenna";
+String productDimensions = "30.3L x 17.8W x 13.4H Centimeters";
+String tunerTechnology = "FM";
 
-System.out.println("After reinitialize");
-System.out.println("The brand of the Radio is:" +brand);
-System.out.println("The color of the Radio is:" +color);
-System.out.println("The specialFeature is:" +specialFeature);
 
-updateBrand();
+		System.out.println("The brand of the Radio is:" +brand);
+		System.out.println("The color of the Radio is:" +color);
+		System.out.println("The specialFeature is:" +specialFeature);
+		System.out.println("The productDimensions  is:" +productDimensions);
+		System.out.println("The tunerTechnology is:" +tunerTechnology);
+
 }
 
-public static void updateBrand(){
-brand = "Greadio";
-}
 }

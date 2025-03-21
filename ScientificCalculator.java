@@ -1,28 +1,21 @@
 class ScientificCalculator{
 
-static String brand = "DR SMARTX";
-static String color = "Black";
-static String type = "Engineering/Scientific";
 public static void main(String aa[]){
+ String brand = "DR SMARTX";
+ String color = "Black";
+ String type = "Engineering/Scientific";
+ String powerSource = "Battery Powered";
+ String screenSize = "3 inches";
+ 
+ 
+ 
+		System.out.println("The brand of the ScientificCalculator is:" +brand);
+		System.out.println("The color of the ScientificCalculator is:" +color);
+		System.out.println("The type of ScientificCalculator is:" +type);
+		System.out.println("The powerSource of the ScientificCalculator  is:" +powerSource);
+		System.out.println("The screenSize of ScientificCalculator is :" +screenSize);
 
-System.out.println("Before updation");
-System.out.println("The brand of the ScientificCalculator is:" +brand);
-System.out.println("The color of the ScientificCalculator is:" +color);
-System.out.println("The type of ScientificCalculator is:" +type);
-		
-brand = "Casio";
-color = "Blue";
-type = "Scientific";
 
-System.out.println("After updation");
-System.out.println("The brand of the ScientificCalculator is:" +brand);
-System.out.println("The color of the ScientificCalculator is:" +color);
-System.out.println("The type of ScientificCalculator is:" +type);
 
-updateColor();
-}
-
-public static void updateColor(){
-color = "Blue";
 }
 }
