@@ -1,20 +1,12 @@
 class FaceBook{
 
-public static String registerUser(String email, String password){
+int id;
+String firstName;
+String lastName;
+char gender;
+String dob;
 
-String logIn = null;
-
-if(email != null && password.length() >= 5)
-	logIn = "LogIn Successful";
-	return logIn;
-}
-
-public static String registerUser(long phoneNumber , String password){
-
-String logInUser = null;
-
-if( phoneNumber != 0.0 && password.length() >= 5)
-	logInUser = "LogIn Successful";
-	return logInUser;
+FaceBook(){
+System.out.println("FaceBook Constructor is invoked...");
 }
 }
