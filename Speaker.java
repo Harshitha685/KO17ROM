@@ -1,12 +1,43 @@
-class Speaker{
+class Speaker {
 
-public static void main(String ar[]){
+    static boolean isPoweredOn = false;
+    static int currentVolume;
+    static int maxVolume = 10;
+    static int minVolume;
 
-System.out.println("Brand: BOAT");
-System.out.println("About this item:");
-System.out.println("Get ready to be enthralled by the 12W RMS stereo sound on Stone 620 portable wireless speaker. Frequency - 120Hz-20KHz;It supports TWS.");
-System.out.println("The IPX4 marked water and splash resistant build lets you carry your sound wherever travel without any worry..");
-System.out.println("Enjoy the true sound of your playlists with a 360° impact courtesy the speaker s ergonomic cylindrical design.");
-System.out.println("You can also control playback, attend calls and activate smart voice assistant with ease courtesy easy access controls and built-in mic");
-}
+    public static void powerButton() {
+        if (isPoweredOn == false) {
+            isPoweredOn = true;
+            System.out.println("Speaker is On...");
+        } else if (isPoweredOn == true) {
+            isPoweredOn = false;
+            System.out.println("Speaker is Off...");
+        }
+    }
+
+    public static void increaseVolume() {
+        if (isPoweredOn == true) {
+            if (currentVolume < maxVolume) {
+                currentVolume = currentVolume + 1;
+                System.out.println("Current Volume: " + currentVolume);
+            } else {
+                System.out.println("Max volume reached");
+            }
+        } else {
+            System.out.println("Please turn on the Speaker first");
+        }
+    }
+
+    public static void decreaseVolume() {
+        if (isPoweredOn == true) {
+            if (currentVolume > minVolume) {
+                currentVolume = currentVolume - 1;
+                System.out.println("Current Volume: " + currentVolume);
+            } else {
+                System.out.println("Min volume reached");
+            }
+        } else {
+            System.out.println("Please turn on the Speaker first");
+        }
+    }
 }
