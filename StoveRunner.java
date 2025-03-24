@@ -2,7 +2,7 @@ class StoveRunner {
 
 public static void main(String stove[]) {
 
-       //  no arg constructor
+    // 1st Stove
     Stove stove1 = new Stove();
     stove1.stoveId = 1;
     stove1.brand = "Prestige";
@@ -13,16 +13,15 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove1.numberOfBurners);
     System.out.println("Gas Stove  : " + stove1.isGasStove);
     System.out.println();
-	
-	// parameterized constructor
-    stove1 = new Stove(stove1.stoveId, stove1.brand, stove1.numberOfBurners, stove1.isGasStove);
+
+    stove1 = new Stove(1, "Prestige", 3, true);
     System.out.println("Stove ID : " + stove1.stoveId);
     System.out.println("Brand : " + stove1.brand);
     System.out.println("Number of Burners: " + stove1.numberOfBurners);
     System.out.println("Gas Stove : " + stove1.isGasStove);
     System.out.println();
 
-    //  no arg constructor
+    // 2nd Stove
     Stove stove2 = new Stove();
     stove2.stoveId = 2;
     stove2.brand = "Butterfly";
@@ -33,16 +32,15 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove2.numberOfBurners);
     System.out.println("Gas Stove : " + stove2.isGasStove);
     System.out.println();
-	
-	// parameterized constructor
-    stove2 = new Stove(stove2.stoveId, stove2.brand, stove2.numberOfBurners, stove2.isGasStove);
+
+    stove2 = new Stove(2, "Butterfly", 2, true);
     System.out.println("Stove ID : " + stove2.stoveId);
     System.out.println("Brand : " + stove2.brand);
     System.out.println("Number of Burners: " + stove2.numberOfBurners);
     System.out.println("Gas Stove : " + stove2.isGasStove);
     System.out.println();
 
-    //  no arg constructor
+    // 3rd Stove
     Stove stove3 = new Stove();
     stove3.stoveId = 3;
     stove3.brand = "Sunflame";
@@ -53,16 +51,15 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove3.numberOfBurners);
     System.out.println("Gas Stove : " + stove3.isGasStove);
     System.out.println();
-	
-	// parameterized constructor
-    stove3 = new Stove(stove3.stoveId, stove3.brand, stove3.numberOfBurners, stove3.isGasStove);
+
+    stove3 = new Stove(3, "Sunflame", 4, true);
     System.out.println("Stove ID: " + stove3.stoveId);
     System.out.println("Brand : " + stove3.brand);
     System.out.println("Number of Burners: " + stove3.numberOfBurners);
     System.out.println("Gas Stove : " + stove3.isGasStove);
     System.out.println();
 
-    //  no arg constructor
+    // 4th Stove
     Stove stove4 = new Stove();
     stove4.stoveId = 4;
     stove4.brand = "Pigeon";
@@ -73,16 +70,15 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove4.numberOfBurners);
     System.out.println("Gas Stove : " + stove4.isGasStove);
     System.out.println();
-	
-	// parameterized constructor
-    stove4 = new Stove(stove4.stoveId, stove4.brand, stove4.numberOfBurners, stove4.isGasStove);
+
+    stove4 = new Stove(4, "Pigeon", 2, true);
     System.out.println("Stove ID : " + stove4.stoveId);
     System.out.println("Brand : " + stove4.brand);
     System.out.println("Number of Burners: " + stove4.numberOfBurners);
     System.out.println("Gas Stove : " + stove4.isGasStove);
     System.out.println();
 
-    //  no arg constructor
+    // 5th Stove
     Stove stove5 = new Stove();
     stove5.stoveId = 5;
     stove5.brand = "Bosch";
@@ -93,17 +89,15 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove5.numberOfBurners);
     System.out.println("Gas Stove : " + stove5.isGasStove);
     System.out.println();
-	
-	
-	// parameterized constructor
-    stove5 = new Stove(stove5.stoveId, stove5.brand, stove5.numberOfBurners, stove5.isGasStove);
+
+    stove5 = new Stove(5, "Bosch", 4, false);
     System.out.println("Stove ID : " + stove5.stoveId);
     System.out.println("Brand  : " + stove5.brand);
     System.out.println("Number of Burners: " + stove5.numberOfBurners);
     System.out.println("Gas Stove  : " + stove5.isGasStove);
     System.out.println();
 
-    //  no arg constructor
+    // 6th Stove
     Stove stove6 = new Stove();
     stove6.stoveId = 6;
     stove6.brand = "Whirlpool";
@@ -114,16 +108,15 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove6.numberOfBurners);
     System.out.println("Gas Stove : " + stove6.isGasStove);
     System.out.println();
-	
-	// parameterized constructor
-    stove6 = new Stove(stove6.stoveId, stove6.brand, stove6.numberOfBurners, stove6.isGasStove);
+
+    stove6 = new Stove(6, "Whirlpool", 3, false);
     System.out.println("Stove ID  : " + stove6.stoveId);
     System.out.println("Brand : " + stove6.brand);
     System.out.println("Number of Burners: " + stove6.numberOfBurners);
     System.out.println("Gas Stove : " + stove6.isGasStove);
     System.out.println();
 
-    //  no arg constructor
+    // 7th Stove
     Stove stove7 = new Stove();
     stove7.stoveId = 7;
     stove7.brand = "LG";
@@ -134,9 +127,8 @@ public static void main(String stove[]) {
     System.out.println("Number of Burners: " + stove7.numberOfBurners);
     System.out.println("Gas Stove : " + stove7.isGasStove);
     System.out.println();
-	
-	// parameterized constructor
-    stove7 = new Stove(stove7.stoveId, stove7.brand, stove7.numberOfBurners, stove7.isGasStove);
+
+    stove7 = new Stove(7, "LG", 5, true);
     System.out.println("Stove ID : " + stove7.stoveId);
     System.out.println("Brand  : " + stove7.brand);
     System.out.println("Number of Burners: " + stove7.numberOfBurners);

@@ -1,6 +1,6 @@
 class CarryBag {
 
-    String brand;
+    String label;  
     double capacityInLiters;
     boolean isWaterProof;
     String color;
@@ -9,9 +9,9 @@ class CarryBag {
         System.out.println("A new carry bag is launched!");
     }
 
-    CarryBag(String brand, double capacityInLiters, boolean isWaterProof, String color) {
+    CarryBag(String label, double capacityInLiters, boolean isWaterProof, String color) {
         System.out.println("A new carry bag is launched!");
-        this.brand = brand;
+        this.label = label;
         this.capacityInLiters = capacityInLiters;
         this.isWaterProof = isWaterProof;
         this.color = color;

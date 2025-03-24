@@ -1,138 +1,159 @@
 class ColdDrinkRunner {
 
 public static void main(String cold[]) {
-        
+
     // 1
-    ColdDrink c1 = new ColdDrink();
-    c1.brand = "Coca-Cola";
-    c1.flavour = "Classic";
-    c1.volumeInLitres = 1.5;
-    c1.isCarbonated = true;
-    System.out.println("Brand: " + c1.brand);
-    System.out.println("Flavour: " + c1.flavour);
-    System.out.println("Volume: " + c1.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c1.isCarbonated);
+    ColdDrink cd1 = new ColdDrink();
+    cd1.manufacturer = "FizzCo";
+    cd1.essence = "Cola";
+    cd1.bottleSize = 1.25;
+    cd1.isSparkling = true;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd1.manufacturer);
+    System.out.println("Essence      : " + cd1.essence);
+    System.out.println("Bottle Size  : " + cd1.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd1.isSparkling);
     System.out.println();
-	
-    c1 = new ColdDrink(c1.brand, c1.flavour, c1.volumeInLitres, c1.isCarbonated);
-	System.out.println("Brand: " + c1.brand);
-    System.out.println("Flavour: " + c1.flavour);
-    System.out.println("Volume: " + c1.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c1.isCarbonated);
+
+    cd1 = new ColdDrink("FizzCo", "Cola", 1.25, true);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd1.manufacturer);
+    System.out.println("Essence      : " + cd1.essence);
+    System.out.println("Bottle Size  : " + cd1.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd1.isSparkling);
     System.out.println();
 
     // 2
-    ColdDrink c2 = new ColdDrink();
-    c2.brand = "Pepsi";
-    c2.flavour = "Cola";
-    c2.volumeInLitres = 2.0;
-    c2.isCarbonated = true;
-    System.out.println("Brand: " + c2.brand);
-    System.out.println("Flavour: " + c2.flavour);
-    System.out.println("Volume: " + c2.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c2.isCarbonated);
+    ColdDrink cd2 = new ColdDrink();
+    cd2.manufacturer = "CoolSip";
+    cd2.essence = "Lemon";
+    cd2.bottleSize = 0.5;
+    cd2.isSparkling = false;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd2.manufacturer);
+    System.out.println("Essence      : " + cd2.essence);
+    System.out.println("Bottle Size  : " + cd2.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd2.isSparkling);
     System.out.println();
-	
-    c2 = new ColdDrink(c2.brand, c2.flavour, c2.volumeInLitres, c2.isCarbonated);
-	System.out.println("Brand: " + c2.brand);
-    System.out.println("Flavour: " + c2.flavour);
-    System.out.println("Volume: " + c2.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c2.isCarbonated);
+
+    cd2 = new ColdDrink("CoolSip", "Lemon", 0.5, false);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd2.manufacturer);
+    System.out.println("Essence      : " + cd2.essence);
+    System.out.println("Bottle Size  : " + cd2.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd2.isSparkling);
     System.out.println();
 
     // 3
-    ColdDrink c3 = new ColdDrink();
-    c3.brand = "Sprite";
-    c3.flavour = "Lemon-Lime";
-    c3.volumeInLitres = 1.0;
-    c3.isCarbonated = true;
-    System.out.println("Brand: " + c3.brand);
-    System.out.println("Flavour: " + c3.flavour);
-    System.out.println("Volume: " + c3.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c3.isCarbonated);
+    ColdDrink cd3 = new ColdDrink();
+    cd3.manufacturer = "ZingPop";
+    cd3.essence = "Orange";
+    cd3.bottleSize = 0.75;
+    cd3.isSparkling = true;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd3.manufacturer);
+    System.out.println("Essence      : " + cd3.essence);
+    System.out.println("Bottle Size  : " + cd3.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd3.isSparkling);
     System.out.println();
-	
-    c3 = new ColdDrink(c3.brand, c3.flavour, c3.volumeInLitres, c3.isCarbonated);
-	System.out.println("Brand: " + c3.brand);
-    System.out.println("Flavour: " + c3.flavour);
-    System.out.println("Volume: " + c3.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c3.isCarbonated);
+
+    cd3 = new ColdDrink("ZingPop", "Orange", 0.75, true);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd3.manufacturer);
+    System.out.println("Essence      : " + cd3.essence);
+    System.out.println("Bottle Size  : " + cd3.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd3.isSparkling);
     System.out.println();
 
     // 4
-    ColdDrink c4 = new ColdDrink();
-    c4.brand = "Maaza";
-    c4.flavour = "Mango";
-    c4.volumeInLitres = 0.75;
-    c4.isCarbonated = false;
-    System.out.println("Brand: " + c4.brand);
-    System.out.println("Flavour: " + c4.flavour);
-    System.out.println("Volume: " + c4.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c4.isCarbonated);
+    ColdDrink cd4 = new ColdDrink();
+    cd4.manufacturer = "SparkFizz";
+    cd4.essence = "Ginger Ale";
+    cd4.bottleSize = 1.0;
+    cd4.isSparkling = true;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd4.manufacturer);
+    System.out.println("Essence      : " + cd4.essence);
+    System.out.println("Bottle Size  : " + cd4.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd4.isSparkling);
     System.out.println();
-	
-    c4 = new ColdDrink(c4.brand, c4.flavour, c4.volumeInLitres, c4.isCarbonated);
-	System.out.println("Brand: " + c4.brand);
-    System.out.println("Flavour: " + c4.flavour);
-    System.out.println("Volume: " + c4.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c4.isCarbonated);
+
+    cd4 = new ColdDrink("SparkFizz", "Ginger Ale", 1.0, true);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd4.manufacturer);
+    System.out.println("Essence      : " + cd4.essence);
+    System.out.println("Bottle Size  : " + cd4.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd4.isSparkling);
     System.out.println();
 
     // 5
-    ColdDrink c5 = new ColdDrink();
-    c5.brand = "Fanta";
-    c5.flavour = "Orange";
-    c5.volumeInLitres = 1.25;
-    c5.isCarbonated = true;
-    System.out.println("Brand: " + c5.brand);
-    System.out.println("Flavour: " + c5.flavour);
-    System.out.println("Volume: " + c5.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c5.isCarbonated);
+    ColdDrink cd5 = new ColdDrink();
+    cd5.manufacturer = "BubbleJoy";
+    cd5.essence = "Apple";
+    cd5.bottleSize = 0.33;
+    cd5.isSparkling = false;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd5.manufacturer);
+    System.out.println("Essence      : " + cd5.essence);
+    System.out.println("Bottle Size  : " + cd5.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd5.isSparkling);
     System.out.println();
-	
-    c5 = new ColdDrink(c5.brand, c5.flavour, c5.volumeInLitres, c5.isCarbonated);
-	System.out.println("Brand: " + c5.brand);
-    System.out.println("Flavour: " + c5.flavour);
-    System.out.println("Volume: " + c5.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c5.isCarbonated);
+
+    cd5 = new ColdDrink("BubbleJoy", "Apple", 0.33, false);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd5.manufacturer);
+    System.out.println("Essence      : " + cd5.essence);
+    System.out.println("Bottle Size  : " + cd5.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd5.isSparkling);
     System.out.println();
 
     // 6
-    ColdDrink c6 = new ColdDrink();
-    c6.brand = "Slice";
-    c6.flavour = "Mango";
-    c6.volumeInLitres = 0.5;
-    c6.isCarbonated = false;
-    System.out.println("Brand: " + c6.brand);
-    System.out.println("Flavour: " + c6.flavour);
-    System.out.println("Volume: " + c6.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c6.isCarbonated);
+    ColdDrink cd6 = new ColdDrink();
+    cd6.manufacturer = "ChillZone";
+    cd6.essence = "Berry";
+    cd6.bottleSize = 1.5;
+    cd6.isSparkling = true;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd6.manufacturer);
+    System.out.println("Essence      : " + cd6.essence);
+    System.out.println("Bottle Size  : " + cd6.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd6.isSparkling);
     System.out.println();
-	
-    c6 = new ColdDrink(c6.brand, c6.flavour, c6.volumeInLitres, c6.isCarbonated);
-	System.out.println("Brand: " + c6.brand);
-    System.out.println("Flavour: " + c6.flavour);
-    System.out.println("Volume: " + c6.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c6.isCarbonated);
+
+    cd6 = new ColdDrink("ChillZone", "Berry", 1.5, true);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd6.manufacturer);
+    System.out.println("Essence      : " + cd6.essence);
+    System.out.println("Bottle Size  : " + cd6.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd6.isSparkling);
     System.out.println();
 
     // 7
-    ColdDrink c7 = new ColdDrink();
-    c7.brand = "7Up";
-    c7.flavour = "Lemon";
-    c7.volumeInLitres = 1.0;
-    c7.isCarbonated = true;
-    System.out.println("Brand: " + c7.brand);
-    System.out.println("Flavour: " + c7.flavour);
-    System.out.println("Volume: " + c7.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c7.isCarbonated);
+    ColdDrink cd7 = new ColdDrink();
+    cd7.manufacturer = "RefreshIt";
+    cd7.essence = "Mango";
+    cd7.bottleSize = 0.6;
+    cd7.isSparkling = false;
+
+    System.out.println("Default Constructor:");
+    System.out.println("Manufacturer : " + cd7.manufacturer);
+    System.out.println("Essence      : " + cd7.essence);
+    System.out.println("Bottle Size  : " + cd7.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd7.isSparkling);
     System.out.println();
-	
-    c7 = new ColdDrink(c7.brand, c7.flavour, c7.volumeInLitres, c7.isCarbonated);
-	System.out.println("Brand: " + c7.brand);
-    System.out.println("Flavour: " + c7.flavour);
-    System.out.println("Volume: " + c7.volumeInLitres + "L");
-    System.out.println("Carbonated: " + c7.isCarbonated);
+
+    cd7 = new ColdDrink("RefreshIt", "Mango", 0.6, false);
+    System.out.println("Parameterized Constructor:");
+    System.out.println("Manufacturer : " + cd7.manufacturer);
+    System.out.println("Essence      : " + cd7.essence);
+    System.out.println("Bottle Size  : " + cd7.bottleSize + " L");
+    System.out.println("Is Sparkling : " + cd7.isSparkling);
     System.out.println();
     }
 }

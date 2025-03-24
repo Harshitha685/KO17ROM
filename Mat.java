@@ -1,19 +1,19 @@
 class Mat {
 
-    String material;
-    String color;
-    double length;
-    boolean isWashable;
+    String shape;
+    String usageArea;
+    double thickness;
+    boolean hasGrip;
 
     Mat() {
-        System.out.println("A new mat is available in the store!");
+        System.out.println("A new mat model is added to the inventory!");
     }
 
-    Mat(String material, String color, double length, boolean isWashable) {
-        System.out.println("A new mat is available in the store!");
-        this.material = material;
-        this.color = color;
-        this.length = length;
-        this.isWashable = isWashable;
+    Mat(String shape, String usageArea, double thickness, boolean hasGrip) {
+        System.out.println("A new mat model is added to the inventory!");
+        this.shape = shape;
+        this.usageArea = usageArea;
+        this.thickness = thickness;
+        this.hasGrip = hasGrip;
     }
 }

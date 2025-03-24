@@ -1,19 +1,19 @@
 class Bell {
 
-    String material;
-    double size;
-    String soundType;
-    boolean isDecorative;
+    String buildMaterial;
+    double diameter;
+    String toneType;
+    boolean forDecoration;
 
     Bell() {
         System.out.println("A new bell has been crafted!");
     }
 
-    Bell(String material, double size, String soundType, boolean isDecorative) {
+    Bell(String buildMaterial, double diameter, String toneType, boolean forDecoration) {
         System.out.println("A new bell has been crafted!");
-        this.material = material;
-        this.size = size;
-        this.soundType = soundType;
-        this.isDecorative = isDecorative;
+        this.buildMaterial = buildMaterial;
+        this.diameter = diameter;
+        this.toneType = toneType;
+        this.forDecoration = forDecoration;
     }
 }

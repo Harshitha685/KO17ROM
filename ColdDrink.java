@@ -1,19 +1,19 @@
 class ColdDrink {
 
-    String brand;
-    String flavour;
-    double volumeInLitres;
-    boolean isCarbonated;
+    String manufacturer;
+    String essence;
+    double bottleSize;
+    boolean isSparkling;
 
     ColdDrink() {
         System.out.println("A new cold drink is available in the market!");
     }
 
-    ColdDrink(String brand, String flavour, double volumeInLitres, boolean isCarbonated) {
+    ColdDrink(String manufacturer, String essence, double bottleSize, boolean isSparkling) {
         System.out.println("A new cold drink is available in the market!");
-        this.brand = brand;
-        this.flavour = flavour;
-        this.volumeInLitres = volumeInLitres;
-        this.isCarbonated = isCarbonated;
+        this.manufacturer = manufacturer;
+        this.essence = essence;
+        this.bottleSize = bottleSize;
+        this.isSparkling = isSparkling;
     }
 }

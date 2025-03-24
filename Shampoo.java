@@ -1,19 +1,21 @@
 class Shampoo {
 
-    int shampooId;
-    String brand;
     double quantityInMl;
-    boolean isAntiDandruff;
+    double price;
+    String hairType;
+    boolean isHerbal;
 
+    // Default constructor
     Shampoo() {
-        System.out.println("A new shampoo product is launched!");
+        System.out.println("A new shampoo has been added to the catalog!");
     }
 
-    Shampoo(int shampooId, String brand, double quantityInMl, boolean isAntiDandruff) {
-        System.out.println("A new shampoo product is launched!");
-        this.shampooId = shampooId;
-        this.brand = brand;
+    // Parameterized constructor 
+    Shampoo(double quantityInMl, double price, String hairType, boolean isHerbal) {
+        System.out.println("A new shampoo has been added to the catalog!");
         this.quantityInMl = quantityInMl;
-        this.isAntiDandruff = isAntiDandruff;
+        this.price = price;
+        this.hairType = hairType;
+        this.isHerbal = isHerbal;
     }
 }

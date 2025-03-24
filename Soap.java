@@ -1,19 +1,19 @@
 class Soap {
 
-    int soapId;
-    String brand;
-    double weightInGrams;
-    boolean isFragrant;
+    String skinType;
+    String color;
+    boolean isOrganic;
 
+    // Default constructor
     Soap() {
         System.out.println("A new soap brand is introduced!");
     }
 
-    Soap(int soapId, String brand, double weightInGrams, boolean isFragrant) {
+    // Parameterized constructor
+    Soap(String skinType, String color, boolean isOrganic) {
         System.out.println("A new soap brand is introduced!");
-        this.soapId = soapId;
-        this.brand = brand;
-        this.weightInGrams = weightInGrams;
-        this.isFragrant = isFragrant;
+        this.skinType = skinType;
+        this.color = color;
+        this.isOrganic = isOrganic;
     }
 }

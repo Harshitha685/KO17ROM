@@ -1,19 +1,19 @@
 class Vase {
 
-    String shape;
-    String material;
-    String color;
-    double height;
+    String designType;     
+    String buildMaterial; 
+    String shade;          
+    double size;           
 
     Vase() {
         System.out.println("A new vase has been added to the collection!");
     }
 
-    Vase(String shape, String material, String color, double height) {
+    Vase(String designType, String buildMaterial, String shade, double size) {
         System.out.println("A new vase has been added to the collection!");
-        this.shape = shape;
-        this.material = material;
-        this.color = color;
-        this.height = height;
+        this.designType = designType;
+        this.buildMaterial = buildMaterial;
+        this.shade = shade;
+        this.size = size;
     }
 }

@@ -1,138 +1,138 @@
 class ShampooRunner {
 
-public static void main(String shampoo[]) {
+public static void main(String[] args) {
 
     // 1
     Shampoo s1 = new Shampoo();
-    s1.shampooId = 101;
-    s1.brand = "Head & Shoulders";
     s1.quantityInMl = 180.0;
-    s1.isAntiDandruff = true;
-    System.out.println("ID : " + s1.shampooId);
-    System.out.println("Brand : " + s1.brand);
-    System.out.println("Quantity (ml) : " + s1.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s1.isAntiDandruff);
+    s1.price = 150.0;
+    s1.hairType = "Oily";
+    s1.isHerbal = false;
+    System.out.println("Quantity (ml): " + s1.quantityInMl);
+    System.out.println("Price: " + s1.price);
+    System.out.println("Hair Type: " + s1.hairType);
+    System.out.println("Herbal: " + s1.isHerbal);
     System.out.println();
-	
-    s1 = new Shampoo(s1.shampooId, s1.brand, s1.quantityInMl, s1.isAntiDandruff);
-	System.out.println("ID : " + s1.shampooId);
-    System.out.println("Brand : " + s1.brand);
-    System.out.println("Quantity (ml) : " + s1.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s1.isAntiDandruff);
+
+    s1 = new Shampoo(180.0, 150.0, "Oily", false);
+    System.out.println("Quantity (ml): " + s1.quantityInMl);
+    System.out.println("Price: " + s1.price);
+    System.out.println("Hair Type: " + s1.hairType);
+    System.out.println("Herbal: " + s1.isHerbal);
     System.out.println();
 
     // 2
     Shampoo s2 = new Shampoo();
-    s2.shampooId = 102;
-    s2.brand = "Dove";
     s2.quantityInMl = 200.0;
-    s2.isAntiDandruff = false;
-    System.out.println("ID : " + s2.shampooId);
-    System.out.println("Brand : " + s2.brand);
-    System.out.println("Quantity (ml) : " + s2.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s2.isAntiDandruff);
+    s2.price = 170.0;
+    s2.hairType = "Dry";
+    s2.isHerbal = true;
+    System.out.println("Quantity (ml): " + s2.quantityInMl);
+    System.out.println("Price: " + s2.price);
+    System.out.println("Hair Type: " + s2.hairType);
+    System.out.println("Herbal: " + s2.isHerbal);
     System.out.println();
-	
-    s2 = new Shampoo(s2.shampooId, s2.brand, s2.quantityInMl, s2.isAntiDandruff);
-	System.out.println("ID : " + s2.shampooId);
-    System.out.println("Brand : " + s2.brand);
-    System.out.println("Quantity (ml) : " + s2.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s2.isAntiDandruff);
+
+    s2 = new Shampoo(200.0, 170.0, "Dry", true);
+    System.out.println("Quantity (ml): " + s2.quantityInMl);
+    System.out.println("Price: " + s2.price);
+    System.out.println("Hair Type: " + s2.hairType);
+    System.out.println("Herbal: " + s2.isHerbal);
     System.out.println();
 
     // 3
     Shampoo s3 = new Shampoo();
-    s3.shampooId = 103;
-    s3.brand = "Clinic Plus";
-    s3.quantityInMl = 340.0;
-    s3.isAntiDandruff = false;
-    System.out.println("ID : " + s3.shampooId);
-    System.out.println("Brand  : " + s3.brand);
-    System.out.println("Quantity (ml) : " + s3.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s3.isAntiDandruff);
+    s3.quantityInMl = 250.0;
+    s3.price = 190.0;
+    s3.hairType = "Normal";
+    s3.isHerbal = false;
+    System.out.println("Quantity (ml): " + s3.quantityInMl);
+    System.out.println("Price: " + s3.price);
+    System.out.println("Hair Type: " + s3.hairType);
+    System.out.println("Herbal: " + s3.isHerbal);
     System.out.println();
-	
-    s3 = new Shampoo(s3.shampooId, s3.brand, s3.quantityInMl, s3.isAntiDandruff);
-	System.out.println("ID : " + s3.shampooId);
-    System.out.println("Brand  : " + s3.brand);
-    System.out.println("Quantity (ml) : " + s3.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s3.isAntiDandruff);
+
+    s3 = new Shampoo(250.0, 190.0, "Normal", false);
+    System.out.println("Quantity (ml): " + s3.quantityInMl);
+    System.out.println("Price: " + s3.price);
+    System.out.println("Hair Type: " + s3.hairType);
+    System.out.println("Herbal: " + s3.isHerbal);
     System.out.println();
 
     // 4
     Shampoo s4 = new Shampoo();
-    s4.shampooId = 104;
-    s4.brand = "Pantene";
-    s4.quantityInMl = 250.0;
-    s4.isAntiDandruff = false;
-    System.out.println("ID  : " + s4.shampooId);
-    System.out.println("Brand : " + s4.brand);
-    System.out.println("Quantity (ml) : " + s4.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s4.isAntiDandruff);
+    s4.quantityInMl = 300.0;
+    s4.price = 220.0;
+    s4.hairType = "Curly";
+    s4.isHerbal = true;
+    System.out.println("Quantity (ml): " + s4.quantityInMl);
+    System.out.println("Price: " + s4.price);
+    System.out.println("Hair Type: " + s4.hairType);
+    System.out.println("Herbal: " + s4.isHerbal);
     System.out.println();
-	
-    s4 = new Shampoo(s4.shampooId, s4.brand, s4.quantityInMl, s4.isAntiDandruff);
-	System.out.println("ID  : " + s4.shampooId);
-    System.out.println("Brand : " + s4.brand);
-    System.out.println("Quantity (ml) : " + s4.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s4.isAntiDandruff);
+
+    s4 = new Shampoo(300.0, 220.0, "Curly", true);
+    System.out.println("Quantity (ml): " + s4.quantityInMl);
+    System.out.println("Price: " + s4.price);
+    System.out.println("Hair Type: " + s4.hairType);
+    System.out.println("Herbal: " + s4.isHerbal);
     System.out.println();
 
     // 5
     Shampoo s5 = new Shampoo();
-    s5.shampooId = 105;
-    s5.brand = "Sunsilk";
-    s5.quantityInMl = 180.0;
-    s5.isAntiDandruff = true;
-    System.out.println("ID : " + s5.shampooId);
-    System.out.println("Brand : " + s5.brand);
-    System.out.println("Quantity (ml) : " + s5.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s5.isAntiDandruff);
+    s5.quantityInMl = 150.0;
+    s5.price = 130.0;
+    s5.hairType = "Frizzy";
+    s5.isHerbal = false;
+    System.out.println("Quantity (ml): " + s5.quantityInMl);
+    System.out.println("Price: " + s5.price);
+    System.out.println("Hair Type: " + s5.hairType);
+    System.out.println("Herbal: " + s5.isHerbal);
     System.out.println();
-	
-    s5 = new Shampoo(s5.shampooId, s5.brand, s5.quantityInMl, s5.isAntiDandruff);
-	System.out.println("ID : " + s5.shampooId);
-    System.out.println("Brand : " + s5.brand);
-    System.out.println("Quantity (ml) : " + s5.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s5.isAntiDandruff);
+
+    s5 = new Shampoo(150.0, 130.0, "Frizzy", false);
+    System.out.println("Quantity (ml): " + s5.quantityInMl);
+    System.out.println("Price: " + s5.price);
+    System.out.println("Hair Type: " + s5.hairType);
+    System.out.println("Herbal: " + s5.isHerbal);
     System.out.println();
 
     // 6
     Shampoo s6 = new Shampoo();
-    s6.shampooId = 106;
-    s6.brand = "Tresemme";
-    s6.quantityInMl = 225.0;
-    s6.isAntiDandruff = false;
-    System.out.println("ID : " + s6.shampooId);
-    System.out.println("Brand  : " + s6.brand);
-    System.out.println("Quantity (ml) : " + s6.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s6.isAntiDandruff);
+    s6.quantityInMl = 275.0;
+    s6.price = 210.0;
+    s6.hairType = "Straight";
+    s6.isHerbal = true;
+    System.out.println("Quantity (ml): " + s6.quantityInMl);
+    System.out.println("Price: " + s6.price);
+    System.out.println("Hair Type: " + s6.hairType);
+    System.out.println("Herbal: " + s6.isHerbal);
     System.out.println();
-	
-    s6 = new Shampoo(s6.shampooId, s6.brand, s6.quantityInMl, s6.isAntiDandruff);
-	System.out.println("ID : " + s6.shampooId);
-    System.out.println("Brand  : " + s6.brand);
-    System.out.println("Quantity (ml) : " + s6.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s6.isAntiDandruff);
+
+    s6 = new Shampoo(275.0, 210.0, "Straight", true);
+    System.out.println("Quantity (ml): " + s6.quantityInMl);
+    System.out.println("Price: " + s6.price);
+    System.out.println("Hair Type: " + s6.hairType);
+    System.out.println("Herbal: " + s6.isHerbal);
     System.out.println();
 
     // 7
     Shampoo s7 = new Shampoo();
-    s7.shampooId = 107;
-    s7.brand = "Biotique";
-    s7.quantityInMl = 300.0;
-    s7.isAntiDandruff = true;
-    System.out.println("ID : " + s7.shampooId);
-    System.out.println("Brand  : " + s7.brand);
-    System.out.println("Quantity (ml) : " + s7.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s7.isAntiDandruff);
+    s7.quantityInMl = 320.0;
+    s7.price = 250.0;
+    s7.hairType = "Colored";
+    s7.isHerbal = false;
+    System.out.println("Quantity (ml): " + s7.quantityInMl);
+    System.out.println("Price: " + s7.price);
+    System.out.println("Hair Type: " + s7.hairType);
+    System.out.println("Herbal: " + s7.isHerbal);
     System.out.println();
-	
-    s7 = new Shampoo(s7.shampooId, s7.brand, s7.quantityInMl, s7.isAntiDandruff);
-	System.out.println("ID : " + s7.shampooId);
-    System.out.println("Brand  : " + s7.brand);
-    System.out.println("Quantity (ml) : " + s7.quantityInMl);
-    System.out.println("Anti-Dandruff : " + s7.isAntiDandruff);
+
+    s7 = new Shampoo(320.0, 250.0, "Colored", false);
+    System.out.println("Quantity (ml): " + s7.quantityInMl);
+    System.out.println("Price: " + s7.price);
+    System.out.println("Hair Type: " + s7.hairType);
+    System.out.println("Herbal: " + s7.isHerbal);
     System.out.println();
     }
 }

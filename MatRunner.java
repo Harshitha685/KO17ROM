@@ -4,129 +4,135 @@ public static void main(String mat[]) {
 
     // 1
     Mat mat1 = new Mat();
-    mat1.material = "Cotton";
-    mat1.color = "Blue";
-    mat1.length = 4.5;
-    mat1.isWashable = true;
-    System.out.println("Material : " + mat1.material);
-    System.out.println("Color  : " + mat1.color);
-    System.out.println("Length : " + mat1.length);
-    System.out.println("Washable : " + mat1.isWashable);
+    mat1.shape = "Rectangle";
+    mat1.usageArea = "Entrance";
+    mat1.thickness = 0.8;
+    mat1.hasGrip = true;
+    System.out.println("Shape     : " + mat1.shape);
+    System.out.println("Usage Area: " + mat1.usageArea);
+    System.out.println("Thickness : " + mat1.thickness + " cm");
+    System.out.println("Has Grip  : " + mat1.hasGrip);
     System.out.println();
-	
-    mat1 = new Mat(mat1.material, mat1.color, mat1.length, mat1.isWashable);
-	System.out.println("Material : " + mat1.material);
-    System.out.println("Color  : " + mat1.color);
-    System.out.println("Length : " + mat1.length);
-    System.out.println("Washable : " + mat1.isWashable);
+
+    mat1 = new Mat("Rectangle", "Entrance", 0.8, true);
+    System.out.println("Shape     : " + mat1.shape);
+    System.out.println("Usage Area: " + mat1.usageArea);
+    System.out.println("Thickness : " + mat1.thickness + " cm");
+    System.out.println("Has Grip  : " + mat1.hasGrip);
     System.out.println();
 
     // 2
     Mat mat2 = new Mat();
-    mat2.material = "Silk";
-    mat2.color = "Red";
-    mat2.length = 3.8;
-    mat2.isWashable = false;
-    System.out.println("Material: " + mat2.material);
-    System.out.println("Color : " + mat2.color);
-    System.out.println("Length : " + mat2.length);
-    System.out.println("Washable: " + mat2.isWashable);
+    mat2.shape = "Round";
+    mat2.usageArea = "Bathroom";
+    mat2.thickness = 0.5;
+    mat2.hasGrip = false;
+    System.out.println("Shape     : " + mat2.shape);
+    System.out.println("Usage Area: " + mat2.usageArea);
+    System.out.println("Thickness : " + mat2.thickness + " cm");
+    System.out.println("Has Grip  : " + mat2.hasGrip);
     System.out.println();
-	
-    mat2 = new Mat(mat2.material, mat2.color, mat2.length, mat2.isWashable);
-	System.out.println("Material: " + mat2.material);
-    System.out.println("Color : " + mat2.color);
-    System.out.println("Length : " + mat2.length);
-    System.out.println("Washable: " + mat2.isWashable);
+
+    mat2 = new Mat("Round", "Bathroom", 0.5, false);
+    System.out.println("Shape     : " + mat2.shape);
+    System.out.println("Usage Area: " + mat2.usageArea);
+    System.out.println("Thickness : " + mat2.thickness + " cm");
+    System.out.println("Has Grip  : " + mat2.hasGrip);
     System.out.println();
 
     // 3
     Mat mat3 = new Mat();
-    mat3.material = "Jute";
-    mat3.color = "Brown";
-    mat3.length = 5.0;
-    mat3.isWashable = true;
-    System.out.println("Material: " + mat3.material);
-    System.out.println("Color : " + mat3.color);
-    System.out.println("Length: " + mat3.length);
-    System.out.println("Washable : " + mat3.isWashable);
+    mat3.shape = "Oval";
+    mat3.usageArea = "Living Room";
+    mat3.thickness = 1.2;
+    mat3.hasGrip = true;
+    System.out.println("Shape     : " + mat3.shape);
+    System.out.println("Usage Area: " + mat3.usageArea);
+    System.out.println("Thickness : " + mat3.thickness + " cm");
+    System.out.println("Has Grip  : " + mat3.hasGrip);
     System.out.println();
-	
-    mat3 = new Mat(mat3.material, mat3.color, mat3.length, mat3.isWashable);
-	System.out.println("Material: " + mat3.material);
-    System.out.println("Color : " + mat3.color);
-    System.out.println("Length: " + mat3.length);
-    System.out.println("Washable : " + mat3.isWashable);
+
+    mat3 = new Mat("Oval", "Living Room", 1.2, true);
+    System.out.println("Shape     : " + mat3.shape);
+    System.out.println("Usage Area: " + mat3.usageArea);
+    System.out.println("Thickness : " + mat3.thickness + " cm");
+    System.out.println("Has Grip  : " + mat3.hasGrip);
     System.out.println();
 
     // 4
     Mat mat4 = new Mat();
-    mat4.material = "Nylon";
-    mat4.color = "Black";
-    mat4.length = 6.2;
-    mat4.isWashable = true;
-    System.out.println("Material: " + mat4.material);
-    System.out.println("Color : " + mat4.color);
-    System.out.println("Length: " + mat4.length);
-    System.out.println("Washable   : " + mat4.isWashable);
+    mat4.shape = "Square";
+    mat4.usageArea = "Kitchen";
+    mat4.thickness = 0.9;
+    mat4.hasGrip = false;
+    System.out.println("Shape     : " + mat4.shape);
+    System.out.println("Usage Area: " + mat4.usageArea);
+    System.out.println("Thickness : " + mat4.thickness + " cm");
+    System.out.println("Has Grip  : " + mat4.hasGrip);
     System.out.println();
-	
-    mat4 = new Mat(mat4.material, mat4.color, mat4.length, mat4.isWashable);
-	System.out.println("Material: " + mat4.material);
-    System.out.println("Color : " + mat4.color);
-    System.out.println("Length: " + mat4.length);
-    System.out.println("Washable   : " + mat4.isWashable);
+
+    mat4 = new Mat("Square", "Kitchen", 0.9, false);
+    System.out.println("Shape     : " + mat4.shape);
+    System.out.println("Usage Area: " + mat4.usageArea);
+    System.out.println("Thickness : " + mat4.thickness + " cm");
+    System.out.println("Has Grip  : " + mat4.hasGrip);
     System.out.println();
 
     // 5
     Mat mat5 = new Mat();
-    mat5.material = "Rubber";
-    mat5.color = "Grey";
-    mat5.length = 3.0;
-    mat5.isWashable = false;
-    System.out.println("Material: " + mat5.material);
-    System.out.println("Color : " + mat5.color);
-    System.out.println("Length: " + mat5.length);
-    System.out.println("Washable   : " + mat5.isWashable);
+    mat5.shape = "Hexagon";
+    mat5.usageArea = "Balcony";
+    mat5.thickness = 1.0;
+    mat5.hasGrip = true;
+    System.out.println("Shape     : " + mat5.shape);
+    System.out.println("Usage Area: " + mat5.usageArea);
+    System.out.println("Thickness : " + mat5.thickness + " cm");
+    System.out.println("Has Grip  : " + mat5.hasGrip);
     System.out.println();
-	
-    mat5 = new Mat(mat5.material, mat5.color, mat5.length, mat5.isWashable);
-	System.out.println("Material: " + mat5.material);
-    System.out.println("Color : " + mat5.color);
-    System.out.println("Length: " + mat5.length);
-    System.out.println("Washable   : " + mat5.isWashable);
+
+    mat5 = new Mat("Hexagon", "Balcony", 1.0, true);
+    System.out.println("Shape     : " + mat5.shape);
+    System.out.println("Usage Area: " + mat5.usageArea);
+    System.out.println("Thickness : " + mat5.thickness + " cm");
+    System.out.println("Has Grip  : " + mat5.hasGrip);
     System.out.println();
 
     // 6
     Mat mat6 = new Mat();
-    mat6.material = "Foam";
-    mat6.color = "Green";
-    mat6.length = 4.0;
-    mat6.isWashable = true;
-    System.out.println("Material : " + mat6.material);
-    System.out.println("Color  : " + mat6.color);
-    System.out.println("Length : " + mat6.length);
-    System.out.println("Washable : " + mat6.isWashable);
+    mat6.shape = "Triangle";
+    mat6.usageArea = "Garden";
+    mat6.thickness = 0.7;
+    mat6.hasGrip = false;
+    System.out.println("Shape     : " + mat6.shape);
+    System.out.println("Usage Area: " + mat6.usageArea);
+    System.out.println("Thickness : " + mat6.thickness + " cm");
+    System.out.println("Has Grip  : " + mat6.hasGrip);
     System.out.println();
-	
-    mat6 = new Mat(mat6.material, mat6.color, mat6.length, mat6.isWashable);
-	System.out.println("Material : " + mat6.material);
-    System.out.println("Color  : " + mat6.color);
-    System.out.println("Length : " + mat6.length);
-    System.out.println("Washable : " + mat6.isWashable);
+
+    mat6 = new Mat("Triangle", "Garden", 0.7, false);
+    System.out.println("Shape     : " + mat6.shape);
+    System.out.println("Usage Area: " + mat6.usageArea);
+    System.out.println("Thickness : " + mat6.thickness + " cm");
+    System.out.println("Has Grip  : " + mat6.hasGrip);
     System.out.println();
 
     // 7
     Mat mat7 = new Mat();
-    mat7.material = "Wool";
-    mat7.color = "White";
-    mat7.length = 2.5;
-    mat7.isWashable = false;
-    System.out.println("Material: " + mat7.material);
-    System.out.println("Color : " + mat7.color);
-    System.out.println("Length : " + mat7.length);
-    System.out.println("Washable   : " + mat7.isWashable);
+    mat7.shape = "Octagon";
+    mat7.usageArea = "Study Room";
+    mat7.thickness = 1.5;
+    mat7.hasGrip = true;
+    System.out.println("Shape     : " + mat7.shape);
+    System.out.println("Usage Area: " + mat7.usageArea);
+    System.out.println("Thickness : " + mat7.thickness + " cm");
+    System.out.println("Has Grip  : " + mat7.hasGrip);
     System.out.println();
-    mat7 = new Mat(mat7.material, mat7.color, mat7.length, mat7.isWashable);
+
+    mat7 = new Mat("Octagon", "Study Room", 1.5, true);
+    System.out.println("Shape     : " + mat7.shape);
+    System.out.println("Usage Area: " + mat7.usageArea);
+    System.out.println("Thickness : " + mat7.thickness + " cm");
+    System.out.println("Has Grip  : " + mat7.hasGrip);
+    System.out.println();
     }
 }
