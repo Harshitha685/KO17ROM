@@ -6,10 +6,10 @@ public class AjioRunner
 
         public static void main(String[] args) {
             AjioUserDto user = new AjioUserDto();
-            user.setEmail("fashionista@ajio.com");
+            user.setEmail("anjali@ajio.com");
             user.setMobileNumber("9876543210");
             user.setPassword("Ajio@2025");
-            user.setFullName("Ananya Rao");
+            user.setFullName("Anjali");
             user.setGender("Female");
 
             Ajio ajio = new Ajio();
@@ -18,6 +18,7 @@ public class AjioRunner
             } else {
                 System.out.println("Ajio Registration Failed!");
             }
+            ajio.getUserDetails();
         }
     }
 

@@ -2,8 +2,10 @@ package com.xworkz.zeptoapp.signup;
 import com.xworkz.zeptoapp.userdata.ZeptoUserDto;
 public class Zepto
 {
+    ZeptoUserDto user;
     public boolean userSignUp(ZeptoUserDto user) {
-        if (userValidation(user)) {
+        if(userValidation(user)) {
+            this.user = user;
             return true;
         } else {
             return false;
@@ -53,5 +55,13 @@ public class Zepto
         }
 
         return isUserValid;
+    }
+
+    public void getUserDetails(){
+        System.out.println("Email id of the user : "+this.user.getEmail());
+        System.out.println("Phone number : "+this.user.getPassword());
+        System.out.println("Password is : "+this.user.getPassword());
+        System.out.println("Name of the user is : "+this.user.getName());
+        System.out.println("Address : "+this.user.getAddress());
     }
 }

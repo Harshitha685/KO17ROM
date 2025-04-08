@@ -1,8 +1,11 @@
 package com.xworkz.dominos.signup;
 import com.xworkz.dominos.userdata.DominosUserDto;
+
 public class Dominos {
 
+DominosUserDto user;
         public boolean userSignUp(DominosUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -45,6 +48,13 @@ public class Dominos {
 
             return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isAddressValid;
         }
+    public void getUserInfo(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("phone number : "+this.user.getPhoneNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("Delivery address : "+this.user.getDeliveryAddress());
+    }
     }
 
 

@@ -2,8 +2,9 @@ package com.xworkz.ajioapp.signup;
 import com.xworkz.ajioapp.userdata.AjioUserDto;
 public class Ajio
 {
-
+AjioUserDto user;
         public boolean userSignUp(AjioUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -50,6 +51,13 @@ public class Ajio
 
             return isEmailValid && isMobileValid && isPasswordValid && isFullNameValid && isGenderValid;
         }
+    public void getUserDetails(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("mobile number : "+this.user.getMobileNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("gender : "+this.user.getGender());
+    }
     }
 
 

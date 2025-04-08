@@ -3,7 +3,6 @@ package com.xworkz.facebookapp.userdata;
 public class FaceBookUserDto
 {
 
-
         private String email;
         private String phoneNumber;
         private String password;

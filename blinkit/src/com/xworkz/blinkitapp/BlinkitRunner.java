@@ -6,10 +6,10 @@ public class BlinkitRunner
 
         public static void main(String[] args) {
             BlinkitUserDto user1 = new BlinkitUserDto();
-            user1.setEmail("quickgroceries@blinkit.com");
+            user1.setEmail("snehaquick@blinkit.com");
             user1.setPhoneNumber("9001122334");
-            user1.setPassword("Blinkit@2025");
-            user1.setFullName("Sneha Verma");
+            user1.setPassword("sneha@2025");
+            user1.setFullName("Sneha Shenoy");
             user1.setDeliveryAddress("JP Nagar, Bangalore");
 
             Blinkit blinkit = new Blinkit();
@@ -18,6 +18,7 @@ public class BlinkitRunner
             } else {
                 System.out.println("Blinkit Registration Failed!");
             }
+            blinkit.getUserDetails();
         }
     }
 

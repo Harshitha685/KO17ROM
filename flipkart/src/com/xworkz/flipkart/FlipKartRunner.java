@@ -8,9 +8,9 @@ public class FlipKartRunner
             FlipKartUserDto user1 = new FlipKartUserDto();
             user1.setEmail("buyer@flipkart.com");
             user1.setPhoneNumber("9876543210");
-            user1.setPassword("Flipkart@2024");
-            user1.setFullName("Ravi Kumar");
-            user1.setShippingAddress("Jayanagar, Bangalore");
+            user1.setPassword("srini@2024");
+            user1.setFullName("Srinivas");
+            user1.setShippingAddress("Bangalore");
 
             FlipKart flipkart = new FlipKart();
             if (flipkart.userSignUp(user1)) {
@@ -18,6 +18,7 @@ public class FlipKartRunner
             } else {
                 System.out.println("Flipkart Registration Failed!");
             }
+            flipkart.getUserDetails();
         }
     }
 

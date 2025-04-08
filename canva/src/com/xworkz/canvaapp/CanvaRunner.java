@@ -6,10 +6,10 @@ public class CanvaRunner
 
         public static void main(String[] args) {
             CanvaUserDto user1 = new CanvaUserDto();
-            user1.setEmail("designer@canva.com");
+            user1.setEmail("samanthar@canva.com");
             user1.setUserName("designPro01");
             user1.setPassword("Canva@2025");
-            user1.setFullName("Samantha George");
+            user1.setFullName("Samantha ");
             user1.setAccountType("Pro");
 
             Canva canva = new Canva();
@@ -18,6 +18,7 @@ public class CanvaRunner
             } else {
                 System.out.println("Canva Registration Failed!");
             }
+            canva.getCanvaUserDetails();
         }
     }
 

@@ -2,8 +2,9 @@ package com.xworkz.bobworldapp.signup;
 import com.xworkz.bobworldapp.userdata.BobWorldUserDto;
 public class BobWorld
 {
-
+BobWorldUserDto user;
         public boolean userSignUp(BobWorldUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -55,6 +56,14 @@ public class BobWorld
 
             return isEmailValid && isMobileValid && isPasswordValid && isFullNameValid && isAadharValid && isAccountTypeValid;
         }
+    public void getUserDetails(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("mobile number : "+this.user.getMobileNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("AadhaarNumber : "+this.user.getAadharNumber());
+        System.out.println("Account type : "+this.user.getAccountType());
+    }
     }
 
 

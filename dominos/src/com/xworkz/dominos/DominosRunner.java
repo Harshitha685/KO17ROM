@@ -9,7 +9,7 @@ public class DominosRunner
             user1.setEmail("pizza.lover@dominos.com");
             user1.setPhoneNumber("9876543210");
             user1.setPassword("Dominos@2025");
-            user1.setFullName("Rahul Sharma");
+            user1.setFullName("Neetha Ambani");
             user1.setDeliveryAddress("MG Road, Pune");
 
             Dominos dominos = new Dominos();
@@ -18,6 +18,7 @@ public class DominosRunner
             } else {
                 System.out.println("Dominos Registration Failed!");
             }
+            dominos.getUserInfo();
         }
     }
 

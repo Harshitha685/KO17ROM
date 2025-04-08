@@ -2,7 +2,7 @@ package com.xworkz.ubereatsapp.signup;
 import com.xworkz.ubereatsapp.userdata.UberEatsUserDto;
 public class UberEats
 {
-
+UberEatsUserDto user;
         public boolean userSignUp(UberEatsUserDto user) {
             return userValidation(user);
         }
@@ -16,6 +16,7 @@ public class UberEats
 
             if (user.getEmail() != null && user.getEmail().contains("@")) {
                 isEmailValid = true;
+                this.user = user;
             } else {
                 System.out.println("Invalid Email. Please enter a valid email.");
             }
@@ -45,6 +46,15 @@ public class UberEats
             }
 
             return isEmailValid && isPhoneValid && isNameValid && isPasswordValid && isAddressValid;
+        }
+
+        public void getUberEatsUserInfo(){
+            System.out.println("email : "+this.user.getEmail());
+            System.out.println("phone number : "+this.user.getPhoneNumber());
+            System.out.println("Password : "+this.user.getPassword());
+            System.out.println("full Name : "+this.user.getFullName());
+            System.out.println("delivery address : "+this.user.getDeliveryAddress());
+
         }
     }
 

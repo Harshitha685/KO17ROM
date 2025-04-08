@@ -6,11 +6,11 @@ public class FoodPandaRunner
 
         public static void main(String[] args) {
             FoodPandaUserDto user1 = new FoodPandaUserDto();
-            user1.setEmail("hungrybear@foodpanda.com");
+            user1.setEmail("panda@foodpanda.com");
             user1.setPhoneNumber("9012345678");
-            user1.setPassword("PandaEats@2024");
-            user1.setFullName("Ankita Joshi");
-            user1.setAddress("Koramangala, Bangalore");
+            user1.setPassword("PandaEats@2025");
+            user1.setFullName("Hruthik Roshan");
+            user1.setAddress("Koramangala");
 
             FoodPanda foodpanda = new FoodPanda();
             if (foodpanda.userSignUp(user1)) {
@@ -18,6 +18,7 @@ public class FoodPandaRunner
             } else {
                 System.out.println("Foodpanda Registration Failed!");
             }
+            foodpanda.getUserDetails();
         }
     }
 

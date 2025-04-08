@@ -2,8 +2,9 @@ package com.xworkz.flipkart.signup;
 import com.xworkz.flipkart.userdata.FlipKartUserDto;
 public class FlipKart
 {
-
+FlipKartUserDto user;
         public boolean userSignUp(FlipKartUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -46,6 +47,13 @@ public class FlipKart
 
             return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isAddressValid;
         }
+    public void getUserDetails(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("phone number : "+this.user.getPhoneNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("Shipping address : "+this.user.getShippingAddress());
+    }
     }
 
 

@@ -3,8 +3,6 @@ package com.xworkz.zeptoapp.userdata;
 public class ZeptoUserDto
 {
 
-
-
     private String email;
     private String phoneNumber;
     private String password;

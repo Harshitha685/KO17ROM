@@ -2,8 +2,9 @@ package com.xworkz.foodpandaapp.signup;
 import com.xworkz.foodpandaapp.userdata.FoodPandaUserDto;
 public class FoodPanda
 {
-
+FoodPandaUserDto user;
         public boolean userSignUp(FoodPandaUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -46,5 +47,12 @@ public class FoodPanda
 
             return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isAddressValid;
         }
+    public void getUserDetails(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("phone number : "+this.user.getPhoneNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("name of the address : "+this.user.getAddress());
+    }
     }
 

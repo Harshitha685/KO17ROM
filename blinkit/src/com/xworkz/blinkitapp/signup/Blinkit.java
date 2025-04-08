@@ -2,8 +2,9 @@ package com.xworkz.blinkitapp.signup;
 import com.xworkz.blinkitapp.userdata.BlinkitUserDto;
 public class Blinkit
 {
-
+BlinkitUserDto user;
         public boolean userSignUp(BlinkitUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -46,6 +47,13 @@ public class Blinkit
 
             return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isAddressValid;
         }
+    public void getUserDetails(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("phone number : "+this.user.getPhoneNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("delivery address : "+this.user.getDeliveryAddress());
+    }
     }
 
 

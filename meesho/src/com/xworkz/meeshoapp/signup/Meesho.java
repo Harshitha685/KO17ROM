@@ -2,8 +2,9 @@ package com.xworkz.meeshoapp.signup;
 import com.xworkz.meeshoapp.userdata.MeeshoUserDto;
 public class Meesho
 {
-
+MeeshoUserDto user;
         public boolean userSignUp(MeeshoUserDto user) {
+            this.user = user;
             return userValidation(user);
         }
 
@@ -46,6 +47,14 @@ public class Meesho
 
             return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isBusinessNameValid;
         }
+
+    public void getMeeshoUserInfo(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("phone number : "+this.user.getPhoneNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("name of the business : "+this.user.getBusinessName());
+    }
     }
 
 

@@ -2,6 +2,7 @@ package com.xworkz.foodpandaapp.userdata;
 
 public class FoodPandaUserDto
 {
+
     private String email;
     private String phoneNumber;
     private String password;
@@ -50,6 +51,8 @@ public class FoodPandaUserDto
     public String getAddress() {
         return address;
     }
+
+
 }
 
 

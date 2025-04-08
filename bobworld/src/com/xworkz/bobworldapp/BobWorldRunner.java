@@ -7,9 +7,9 @@ public class BobWorldRunner
 
         public static void main(String[] args) {
             BobWorldUserDto user = new BobWorldUserDto();
-            user.setEmail("user@bobworld.com");
+            user.setEmail("rajesh@bobworld.com");
             user.setMobileNumber("9876543210");
-            user.setPassword("BOB@1234");
+            user.setPassword("bobi@1234");
             user.setFullName("Rajesh Kumar");
             user.setAadharNumber("123456789012");
             user.setAccountType("Savings");
@@ -20,6 +20,7 @@ public class BobWorldRunner
             } else {
                 System.out.println("BOB World Registration Failed!");
             }
+            bob.getUserDetails();
         }
     }
 

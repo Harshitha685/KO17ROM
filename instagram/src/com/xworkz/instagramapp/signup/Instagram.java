@@ -2,10 +2,12 @@ package com.xworkz.instagramapp.signup;
 import com.xworkz.instagramapp.userdata.UserDataDto;
 public class Instagram
 {
+    UserDataDto user;
     public boolean userSignUp(UserDataDto user)
     {
-       if( userValidation(user))
-           return true;
+       if( userValidation(user)){
+            this.user = user;
+           return true;}
        else
            return false;
 
@@ -49,9 +51,12 @@ public class Instagram
 
         return isUserValid;
 
-
-
-
-
+    }
+    public void getUserData(){
+        System.out.println("Email : "+this.user.getEmail());
+        System.out.println("Dob : "+this.user.getDob());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("Name : "+this.user.getName());
+        System.out.println("User name : "+this.user.getUserName());
     }
 }

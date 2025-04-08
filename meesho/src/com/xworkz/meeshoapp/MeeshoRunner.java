@@ -9,7 +9,7 @@ public class MeeshoRunner
             user1.setEmail("seller@meesho.com");
             user1.setPhoneNumber("9876543210");
             user1.setPassword("SellNow@2024");
-            user1.setFullName("Sneha Kapoor");
+            user1.setFullName("John Smith");
             user1.setBusinessName("Sneha Fashion Hub");
 
             Meesho meesho = new Meesho();
@@ -18,6 +18,7 @@ public class MeeshoRunner
             } else {
                 System.out.println("Meesho Registration Failed!");
             }
+            meesho.getMeeshoUserInfo();
         }
     }
 

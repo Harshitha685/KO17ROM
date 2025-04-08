@@ -2,7 +2,9 @@ package com.xworkz.facebookapp.signup;
 import com.xworkz.facebookapp.userdata.FaceBookUserDto;
 public class FaceBook
 {
+    FaceBookUserDto user;
     public boolean userSignUp(FaceBookUserDto user) {
+        this.user = user;
         return userValidation(user);
     }
 
@@ -44,6 +46,13 @@ public class FaceBook
         }
 
         return isEmailValid && isPhoneValid && isPasswordValid && isFullNameValid && isDobValid;
+    }
+    public void getUserData(){
+        System.out.println("email : "+this.user.getEmail());
+        System.out.println("phone number : "+this.user.getPhoneNumber());
+        System.out.println("Password : "+this.user.getPassword());
+        System.out.println("full Name : "+this.user.getFullName());
+        System.out.println("date of birth: "+this.user.getDateOfBirth());
     }
 }
 

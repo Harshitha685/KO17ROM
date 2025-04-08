@@ -6,10 +6,10 @@ public class UberEatsRunner
 
         public static void main(String[] args) {
             UberEatsUserDto user1 = new UberEatsUserDto();
-            user1.setEmail("foodie@example.com");
+            user1.setEmail("ashika@e6896.com");
             user1.setPhoneNumber("9998887776");
-            user1.setFullName("Priya Sharma");
-            user1.setPassword("YummyFood@2024");
+            user1.setFullName("Ashika Ragnath");
+            user1.setPassword("Food11@2024");
             user1.setDeliveryAddress("HSR Layout, Bangalore");
 
             UberEats uberEats = new UberEats();
@@ -18,6 +18,7 @@ public class UberEatsRunner
             } else {
                 System.out.println("UberEats Registration Failed!");
             }
+            uberEats.getUberEatsUserInfo();
         }
     }
 

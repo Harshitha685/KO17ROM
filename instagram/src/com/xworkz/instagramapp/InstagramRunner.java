@@ -18,7 +18,8 @@ public class InstagramRunner
             System.out.println("User Registration Successfull");
         else
             System.out.println("User Registration Unsuccessfull");
-
+        user.getUserData();
     }
+
 
 }
