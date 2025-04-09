@@ -16,7 +16,7 @@ public class MicroSoftRunner {
             LogIn login = new LogIn();
             boolean status = login.initiateLogin(user);
 
-            
+login.getUserDetailsInfo();
         }
     }
 

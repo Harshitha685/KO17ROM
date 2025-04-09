@@ -3,8 +3,10 @@ package com.xworkz.walmartapp.login;
 import com.xworkz.walmartapp.walmart.WalMartDto;
 
 public class UserLogIn {
+    WalMartDto walMartDto;
 
         public boolean userLogIn(WalMartDto walMartDto) {
+            this.walMartDto = walMartDto;
             boolean isLogIn = false;
             boolean var = customerProfileValidation(walMartDto);
             if (var == true)
@@ -14,7 +16,7 @@ public class UserLogIn {
             return isLogIn;
         }
 
-        public static boolean customerProfileValidation(WalMartDto walMartDto) {
+        public  boolean customerProfileValidation(WalMartDto walMartDto) {
             boolean customerValid = false;
             boolean isemailId = false;
             boolean isfirstName = false;
@@ -70,6 +72,13 @@ public class UserLogIn {
             return customerValid;
         }
 
+    public void getUserDetails(){
+        System.out.println("emailId : "+this.walMartDto.getEmailId());
+        System.out.println("Phone number : "+this.walMartDto.getPhoneNumber());
+        System.out.println("First name : "+this.walMartDto.getFirstName());
+        System.out.println("Last Name : "+this.walMartDto.getLastName());
+        System.out.println("Password : "+this.walMartDto.getPassWord());
+    }
     }
 
 

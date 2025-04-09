@@ -10,11 +10,12 @@ public class NykaaRunner {
         NykaaDto nykaaDto = new NykaaDto();
         nykaaDto.setEmailId("ram123@gmail.com");
         nykaaDto.setName("Ramarjun");
-        nykaaDto.setMobileNumber("689793074");
+        nykaaDto.setMobileNumber("6897930740");
         nykaaDto.setPassWord("rammu0980");
 
-        NykaaUserLogIn nykaaUserLogIn = new NykaaUserLogIn();
-        boolean ref = nykaaUserLogIn.validateUserLogIn(nykaaDto);;
+        NykaaUserLogIn logIn = new NykaaUserLogIn();
+        boolean ref = logIn.userlogIn(nykaaDto);
+
 
         if(ref == true){
             System.out.println("User Login successful");
@@ -22,6 +23,7 @@ public class NykaaRunner {
         else{
             System.out.println("User Login unsuccessful");
         }
+        logIn.getUserLogin();
     }
     }
 

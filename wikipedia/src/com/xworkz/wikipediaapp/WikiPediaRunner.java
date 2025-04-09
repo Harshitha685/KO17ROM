@@ -18,7 +18,7 @@ public class WikiPediaRunner {
             WikipediaLogIn login = new WikipediaLogIn();
             boolean loginResult = login.processLogin(wikiUser);
 
-
+            login.getUserData();
         }
     }
 

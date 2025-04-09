@@ -3,8 +3,10 @@ package com.xworkz.spotifyapp.login;
 import com.xworkz.spotifyapp.spotify.SpotifyDto;
 
 public class SpotifyLogIn {
+    SpotifyDto dto;
 
     public boolean tuneIn(SpotifyDto dto) {
+        this.dto = dto;
         boolean isLogged = false;
 
         boolean verified = verifyMelodyDetails(dto);
@@ -69,5 +71,14 @@ public class SpotifyLogIn {
         }
 
         return isValid;
+    }
+
+    public void getUserDetails(){
+        System.out.println("Artist name : "+this.dto.getArtistName());
+        System.out.println("Email : "+this.dto.getEmail());
+        System.out.println("track key : "+this.dto.getTrackKey());
+        System.out.println("reenter key : "+this.dto.getReEnterKey());
+        System.out.println("Playlist : "+this.dto.getPlaylistId());
+        System.out.println("Region : "+this.dto.getRegion());
     }
 }

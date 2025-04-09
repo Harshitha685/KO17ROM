@@ -2,8 +2,9 @@ package com.xworkz.twitterapp.signin;
 import com.xworkz.twitterapp.twitter.TwitterDto;
 
 public class TwitterSignIn {
-
+TwitterDto dto;
         public boolean beginSession(TwitterDto dto) {
+            this.dto = dto;
             boolean isSessionStarted = false;
 
             boolean isValidUser = validateUserInfo(dto);
@@ -75,6 +76,15 @@ public class TwitterSignIn {
 
             return valid;
         }
+
+    public void getSignDetails(){
+        System.out.println("email : "+this.dto.getEmail());
+        System.out.println("mobile number : "+this.dto.getMobileNumber());
+        System.out.println("Display name : "+this.dto.getDisplayName());
+        System.out.println("Password : "+this.dto.getPassword());
+        System.out.println("handle : "+this.dto.getHandle());
+        System.out.println("confirm password : "+this.dto.getConfirmPassword());
+    }
     }
 
 

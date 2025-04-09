@@ -3,9 +3,11 @@ package com.xworkz.myntraapp.myntralogin;
 import com.xworkz.myntraapp.myntra.MyntraDto;
 
 public class MyntraLogin {
+    MyntraDto myntraDto;
 
         public boolean logIn(MyntraDto myntraDto)
         {
+            this.myntraDto = myntraDto;
             boolean isLogin = false;
 
             boolean row = validUserProfile(myntraDto);
@@ -86,5 +88,13 @@ public class MyntraLogin {
             }
             return validUser;
         }
+    public void getUserData(){
+        System.out.println("email id : "+this.myntraDto.getEmailId());
+        System.out.println("phone number : "+this.myntraDto.getPhoneNumber());
+        System.out.println("full Name : "+this.myntraDto.getFullName());
+        System.out.println("gender : "+this.myntraDto.getGender());
+        System.out.println("date of birth: "+this.myntraDto.getDob());
+        System.out.println("Location : "+this.myntraDto.getLocation());
+    }
     }
 

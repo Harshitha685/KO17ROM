@@ -3,7 +3,9 @@ package com.xworkz.nykaaapp.userlogin;
 import com.xworkz.nykaaapp.nykaa.NykaaDto;
 
 public class NykaaUserLogIn {
+    NykaaDto nykaaDto;
     public boolean userlogIn(NykaaDto nykaaDto){
+        this.nykaaDto = nykaaDto;
         boolean isUserLogin = false;
 
         boolean var = validateUserLogIn(nykaaDto);
@@ -17,7 +19,7 @@ public class NykaaUserLogIn {
 
 
 
-    public static boolean validateUserLogIn( NykaaDto nykaaDto)
+    public  boolean validateUserLogIn( NykaaDto nykaaDto)
     {
         boolean validLogIn = false;
         boolean isemailId = false;
@@ -66,6 +68,13 @@ public class NykaaUserLogIn {
             validLogIn = true;
         }
         return validLogIn;
+    }
+
+    public void getUserLogin(){
+        System.out.println("email: " +this.nykaaDto.getEmailId());
+        System.out.println("name : " +this.nykaaDto.getName());
+        System.out.println("mobile : " +this.nykaaDto.getMobileNumber());
+        System.out.println("password :" +this.nykaaDto.getPassWord());
     }
 }
 

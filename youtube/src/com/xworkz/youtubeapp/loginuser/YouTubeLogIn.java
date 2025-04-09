@@ -2,8 +2,10 @@ package com.xworkz.youtubeapp.loginuser;
 import com.xworkz.youtubeapp.youtube.YouTubeDto;
 
 public class YouTubeLogIn {
+    YouTubeDto dto;
 
         public boolean startSignIn(YouTubeDto dto) {
+            this.dto = dto;
             boolean signedIn = false;
 
             boolean validated = verifyAccount(dto);
@@ -67,6 +69,13 @@ public class YouTubeLogIn {
 
             return validAccount;
         }
+    public void getLoginDetails(){
+        System.out.println("user email : "+this.dto.getUserEmail());
+        System.out.println("mobile: "+this.dto.getMobile());
+        System.out.println("Channel name : "+this.dto.getChannelName());
+        System.out.println("Password : "+this.dto.getPassword());
+        System.out.println("confirm password : "+this.dto.getConfirmPassword());
+    }
     }
 
 

@@ -3,8 +3,10 @@ package com.xworkz.ebayapp.ebayregistration;
 import com.xworkz.ebayapp.ebay.EbayDto;
 
 public class EbayRegister {
+    EbayDto ebayDto;
 
         public boolean register(EbayDto ebayDto) {
+            this.ebayDto = ebayDto;
             boolean isRegistered = false;
 
             boolean isValidated = validateUserRegister(ebayDto);
@@ -61,6 +63,13 @@ public class EbayRegister {
 
             return validUser;
         }
+
+    public void getUserData(){
+        System.out.println("email : "+this.ebayDto.getEmail());
+        System.out.println("Password : "+this.ebayDto.getPassWord());
+        System.out.println("first Name : "+this.ebayDto.getFirstName());
+        System.out.println("last name: "+this.ebayDto.getLastName());
+    }
 
     }
 

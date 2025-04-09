@@ -2,8 +2,9 @@ package com.xworkz.linkedinapp.register;
 import com.xworkz.linkedinapp.linkedin.LinkedInDto;
 
 public class LinkedInSignIn {
-
+LinkedInDto dto;
         public boolean startSession(LinkedInDto dto) {
+            this.dto = dto;
             boolean isLoggedIn = false;
 
             boolean userStatus = checkUserData(dto);
@@ -75,6 +76,14 @@ public class LinkedInSignIn {
 
             return isValid;
         }
+    public void getSignDetails(){
+        System.out.println("email : "+this.dto.getEmail());
+        System.out.println("contact number : "+this.dto.getContactNumber());
+        System.out.println("User name : "+this.dto.getUsername());
+        System.out.println("Password : "+this.dto.getPassword());
+        System.out.println("full Name : "+this.dto.getFullName());
+        System.out.println("confirm password : "+this.dto.getConfirmPassword());
+    }
     }
 
 

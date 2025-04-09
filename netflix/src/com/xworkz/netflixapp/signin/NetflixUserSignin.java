@@ -1,13 +1,17 @@
 package com.xworkz.netflixapp.signin;
 import com.xworkz.netflixapp.netflix.NetflixDto;
+
 public class NetflixUserSignin {
+    NetflixDto dto;
 
         public boolean attemptLogin(NetflixDto dto) {
+            this.dto = dto;
             boolean isLoggedIn = false;
 
             boolean isValidUser = validateUserDetails(dto);
             if (isValidUser) {
                 isLoggedIn = true;
+                this.dto = dto;
                 System.out.println("Netflix login successful!");
             } else {
                 System.out.println("Netflix login failed. Please check your details.");
@@ -67,6 +71,15 @@ public class NetflixUserSignin {
             }
 
             return isValid;
+        }
+
+        public void getNetflixUserDetails(){
+            System.out.println("User id : "+this.dto.getUserId());
+            System.out.println("Username : "+this.dto.getUserName());
+            System.out.println("Email : "+this.dto.getEmail());
+            System.out.println("Password : "+this.dto.getPassword());
+            System.out.println("Confirm password : "+this.dto.getConfirmPassword());
+            System.out.println("Mobile number : "+this.dto.getMobileNumber());
         }
     }
 

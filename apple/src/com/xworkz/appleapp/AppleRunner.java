@@ -17,8 +17,7 @@ public class AppleRunner {
 
             AppleLogin login = new AppleLogin();
             boolean result = login.verifySignIn(user);
-
-            System.out.println("Login success: " + result);
+            login.getLoginDetails();
         }
     }
 

@@ -16,6 +16,7 @@ public class YouTubeRunner {
 
             YouTubeLogIn login = new YouTubeLogIn();
             boolean result = login.startSignIn(user);
+            login.getLoginDetails();
 
         }
     }

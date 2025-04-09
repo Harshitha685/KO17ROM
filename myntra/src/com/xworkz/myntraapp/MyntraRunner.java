@@ -18,7 +18,7 @@ public class MyntraRunner {
 
         MyntraLogin myntraLogin = new MyntraLogin();
         boolean isValid = myntraLogin.logIn(myntraDto);
-
+    myntraLogin.getUserData();
         if (isValid == true) {
             System.out.println("Login successful");
         } else {

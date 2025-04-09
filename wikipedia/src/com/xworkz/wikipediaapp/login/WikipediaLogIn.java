@@ -2,9 +2,10 @@ package com.xworkz.wikipediaapp.login;
 
 import com.xworkz.wikipediaapp.wikipedia.WikiPediaDto;
 public class WikipediaLogIn {
+    WikiPediaDto data;
 
         public boolean processLogin(WikiPediaDto data) {
-
+            this.data = data;
             boolean isLoggedIn = false;
 
             boolean isUserInfoCorrect = checkUserDetails(data);
@@ -68,6 +69,13 @@ public class WikipediaLogIn {
 
             return isValidUser;
         }
+    public void getUserData(){
+        System.out.println("email : "+this.data.getEmail());
+        System.out.println("preferd language : "+this.data.getPreferredLanguage());
+        System.out.println("User Password : "+this.data.getUserPassword());
+        System.out.println("user Name : "+this.data.getUserName());
+        System.out.println("Retype password: "+this.data.getRetypePassword());
+    }
     }
 
 

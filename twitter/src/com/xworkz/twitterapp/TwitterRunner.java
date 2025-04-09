@@ -16,7 +16,7 @@ public class TwitterRunner {
             TwitterSignIn login = new TwitterSignIn();
             boolean loggedIn = login.beginSession(user);
 
-
+            login.getSignDetails();
         }
     }
 

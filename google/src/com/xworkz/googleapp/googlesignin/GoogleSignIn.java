@@ -4,8 +4,10 @@ import com.xworkz.googleapp.google.GoogleDto;
 
 
 public class GoogleSignIn {
+    GoogleDto googleDto;
 
         public boolean attemptLogin(GoogleDto googleDto) {
+            this.googleDto = googleDto;
             boolean isLogin = false;
 
             boolean valid = validateGoogleUser(googleDto);
@@ -72,6 +74,13 @@ public class GoogleSignIn {
 
             return validUser;
         }
+    public void getUserData(){
+        System.out.println("email : "+this.googleDto.getEmail());
+        System.out.println("phone number : "+this.googleDto.getPhoneNumber());
+        System.out.println("Password : "+this.googleDto.getPassword());
+        System.out.println("user Name : "+this.googleDto.getUsername());
+        System.out.println("confirm password: "+this.googleDto.getConfirmPassword());
+    }
     }
 
 

@@ -2,9 +2,10 @@ package com.xworkz.microsoftapp.sigin;
 import com.xworkz.microsoftapp.microsoft.MicroSoftDto;
 
 public class LogIn {
-
+    MicroSoftDto dto;
 
         public boolean initiateLogin(MicroSoftDto dto) {
+            this.dto = dto;
             boolean loggedIn = false;
 
             boolean validated = validateMicrosoftUser(dto);
@@ -70,6 +71,14 @@ public class LogIn {
 
             return valid;
         }
+    public void getUserDetailsInfo(){
+        System.out.println("User id : "+this.dto.getUserId());
+        System.out.println("email : "+this.dto.getEmail());
+        System.out.println("mobile number : "+this.dto.getMobileNumber());
+        System.out.println("Password : "+this.dto.getPassword());
+        System.out.println("Confirm Password : "+this.dto.getConfirmPassword());
+        System.out.println("name : "+this.dto.getName());
+    }
     }
 
 

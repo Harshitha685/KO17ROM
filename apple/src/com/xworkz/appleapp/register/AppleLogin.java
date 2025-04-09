@@ -1,8 +1,10 @@
 package com.xworkz.appleapp.register;
 import com.xworkz.appleapp.apple.AppleDto;
-public class AppleLogin {
 
+public class AppleLogin {
+AppleDto dto;
         public boolean verifySignIn(AppleDto dto) {
+            this.dto = dto;
             boolean signedIn = false;
 
             boolean profileVerified = validateAppleUser(dto);
@@ -68,6 +70,14 @@ public class AppleLogin {
 
             return isValid;
         }
+    public void getLoginDetails(){
+        System.out.println("Apple id : "+this.dto.getAppleId());
+        System.out.println("email : "+this.dto.getEmail());
+        System.out.println("contact number : "+this.dto.getContactNumber());
+        System.out.println("Password : "+this.dto.getPassword());
+        System.out.println("User Name : "+this.dto.getUserName());
+        System.out.println("Confirm password : "+this.dto.getConfirmPassword());
+    }
     }
 
 

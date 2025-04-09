@@ -21,6 +21,6 @@ public class EbayRunner {
             System.out.println("Registration unsuccessful");
 
         }
-
+ebayRegister.getUserData();
     }
 }

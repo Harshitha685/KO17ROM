@@ -4,10 +4,12 @@ import com.xworkz.amazonapp.amazon.AmazonDto;
 
 
 public class AmazonLogin {
+    AmazonDto amazonDto;
 
     private String emailId;
 
     public boolean  signIn(AmazonDto amazonDto){
+        this.amazonDto = amazonDto;
 
     boolean isSignIn = false;
         boolean userValidated = userProfileValidate(amazonDto);
@@ -76,6 +78,13 @@ public class AmazonLogin {
             userValid = true;
         }
         return userValid;
+    }
+    public void getUserData(){
+        System.out.println("email : "+this.amazonDto.getEmailId());
+        System.out.println("phone number : "+this.amazonDto.getPhoneNumber());
+        System.out.println("Password : "+this.amazonDto.getPassword());
+        System.out.println("full Name : "+this.amazonDto.getFullName());
+        System.out.println("confirm password : "+this.amazonDto.getConfirmPassword());
     }
 }
 

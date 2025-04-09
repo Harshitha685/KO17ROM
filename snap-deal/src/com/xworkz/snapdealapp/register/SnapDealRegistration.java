@@ -3,8 +3,10 @@ package com.xworkz.snapdealapp.register;
 import com.xworkz.snapdealapp.snapdeal.SnapDealDto;
 
 public class SnapDealRegistration {
+    SnapDealDto snapDealDto;
 
   public boolean registration(SnapDealDto snapDealDto) {
+      this.snapDealDto = snapDealDto;
       boolean isRegister = false;
 
       boolean ref = userRegistrationValidation(snapDealDto);
@@ -15,7 +17,7 @@ public class SnapDealRegistration {
       return isRegister;
   }
 
-        public static boolean userRegistrationValidation(SnapDealDto snapDealDto ) {
+        public  boolean userRegistrationValidation(SnapDealDto snapDealDto ) {
             boolean validUser = false;
             boolean isemailId = false;
             boolean ismobileNumber = false;
@@ -73,5 +75,13 @@ public class SnapDealRegistration {
             }
             return validUser;
         }
+    public void getUserDetails(){
+
+        System.out.println("email id : "+this.snapDealDto.getEmailId());
+        System.out.println(" name : "+this.snapDealDto.getName());
+        System.out.println("Password : "+this.snapDealDto.getPassWord());
+        System.out.println("dob : "+this.snapDealDto.getDob());
+        System.out.println("mobile number : "+this.snapDealDto.getMobileNumber());
+    }
     }
 

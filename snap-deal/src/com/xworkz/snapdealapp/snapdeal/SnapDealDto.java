@@ -47,6 +47,7 @@ public class SnapDealDto {
         public String getPassWord() {
             return passWord;
         }
+
     }
 
 

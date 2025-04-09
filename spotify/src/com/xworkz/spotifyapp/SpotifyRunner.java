@@ -13,10 +13,10 @@ public class SpotifyRunner {
         dto.setTrackKey("beat123456");
         dto.setReEnterKey("beat123456");
         dto.setPlaylistId(1234567890L);
-        dto.setRegion("USA");
+        dto.setRegion("India");
 
         SpotifyLogIn login = new SpotifyLogIn();
         boolean result = login.tuneIn(dto);
-        System.out.println("Final login result: " + result);
+        login.getUserDetails();
     }
 }
