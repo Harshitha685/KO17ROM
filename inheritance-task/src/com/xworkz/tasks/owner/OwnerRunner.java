@@ -9,5 +9,10 @@ public class OwnerRunner {
         CompanyOwner companyOwner = new CompanyOwner();
         companyOwner.ownerName();
         companyOwner.ownerType();
+
+        Owner owner1 = new CompanyOwner();
+
+        CompanyOwner companyOwner1 = (CompanyOwner) owner1;
+        System.out.println(companyOwner1);
     }
 }

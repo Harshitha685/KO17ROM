@@ -9,5 +9,10 @@ public class FurnitureRunner {
         Table table = new Table();
         table.assembleFurniture();
         table.isHeavy();
+
+        Furniture furniture1 = new Table();
+
+        Table table1 = (Table) furniture1;
+        System.out.println(table1);
     }
 }

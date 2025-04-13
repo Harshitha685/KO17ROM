@@ -12,5 +12,10 @@ public class BillRunner {
         ElectricityBill electricityBill = new ElectricityBill();
         electricityBill.generateBill();
         electricityBill.isPaid();
+
+        Bill bill1 = new ElectricityBill();
+
+        ElectricityBill electricityBill1 = (ElectricityBill) bill1;
+        System.out.println(electricityBill1);
     }
 }

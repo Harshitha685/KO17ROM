@@ -9,5 +9,10 @@ public class TransactionRunner {
         WithDrawl withDrawl = new WithDrawl();
         withDrawl.processTransaction();
         withDrawl.isTransactionSuccessful();
+
+        Transaction transaction1 = new WithDrawl();
+
+        WithDrawl withDrawl1 = (WithDrawl) transaction1;
+        System.out.println(withDrawl1);
     }
 }

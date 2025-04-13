@@ -10,5 +10,9 @@ public class WindowRunner {
         Glass glass = new Glass();
         glass.openWindow();
         glass.closeWindow();
+        Window window1 = new Glass();
+
+        Glass glass1 = (Glass) window1;
+        System.out.println(glass1);
     }
 }

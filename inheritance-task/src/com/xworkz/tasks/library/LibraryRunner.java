@@ -9,5 +9,10 @@ public class LibraryRunner {
         DigitalLibrary digitalLibrary = new DigitalLibrary();
         digitalLibrary.libraryName();
         digitalLibrary.libraryType();
+
+        Library library1 = new DigitalLibrary();
+
+        DigitalLibrary digitalLibrary1 = (DigitalLibrary) library1;
+        System.out.println(digitalLibrary1);
     }
 }

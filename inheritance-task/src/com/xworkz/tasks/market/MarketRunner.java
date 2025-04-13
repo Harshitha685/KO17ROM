@@ -9,5 +9,10 @@ public class MarketRunner {
         SuperMarket superMarket = new SuperMarket();
         superMarket.marketName();
         superMarket.location();
+
+        Market market1 = new SuperMarket();
+
+        SuperMarket superMarket1 = (SuperMarket) market1;
+        System.out.println(superMarket1);
     }
 }

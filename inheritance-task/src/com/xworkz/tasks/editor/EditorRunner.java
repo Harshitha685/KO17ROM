@@ -9,5 +9,10 @@ public class EditorRunner {
         PhotoEditor photoEditor = new PhotoEditor();
         photoEditor.editorName();
         photoEditor.editorType();
+
+        Editor editor1 = new PhotoEditor();
+
+        PhotoEditor photoEditor1 = (PhotoEditor) editor1;
+        System.out.println(photoEditor1);
     }
 }

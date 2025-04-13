@@ -9,5 +9,9 @@ public class InsuranceRunner {
         LifeInsurance lifeInsurance = new LifeInsurance();
         lifeInsurance.activatePolicy();
         lifeInsurance.cancelPolicy();
+
+        Insurance insurance1 = new LifeInsurance();
+        LifeInsurance lifeInsurance1 = (LifeInsurance) insurance1;
+        System.out.println(lifeInsurance1);
     }
 }

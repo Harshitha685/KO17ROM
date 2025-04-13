@@ -9,5 +9,10 @@ public class ExperienceRunner {
         JobExperience jobExperience = new JobExperience();
         jobExperience.calculateTotalExperience();
         jobExperience.isRelevant();
+
+        Experience experience1 = new JobExperience();
+
+        JobExperience jobExperience1 = (JobExperience) experience1;
+        System.out.println(jobExperience1);
     }
 }

@@ -9,5 +9,10 @@ public class BeautyProductsRunner {
         Cream cream = new Cream();
         cream.checkAvailability();
         cream.type();
+
+        BeautyProducts beautyProducts1 = new Cream();
+
+        Cream cream1 = (Cream) beautyProducts1;
+        System.out.println(cream1);
     }
 }

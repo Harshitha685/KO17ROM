@@ -9,5 +9,10 @@ public class PaperRunner {
         NewsPaper newsPaper = new NewsPaper();
         newsPaper.printPaper();
         newsPaper.submitPaper();
+
+        Paper paper1 = new NewsPaper();
+
+        NewsPaper newsPaper1 = (NewsPaper) paper1;
+        System.out.println(newsPaper1);
     }
 }

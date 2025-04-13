@@ -10,5 +10,9 @@ public class InstrumentRunner {
         Microscope microscope = new Microscope();
         microscope.name();
         microscope.displayInstrumentInfo();
+
+        Instrument instrument1 = new Microscope();
+        Microscope microscope1 = (Microscope) instrument1;
+        System.out.println(microscope1);
     }
 }

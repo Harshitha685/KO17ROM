@@ -10,5 +10,10 @@ public class EventRunner
         ConferenceEvent conferenceEvent = new ConferenceEvent();
         conferenceEvent.scheduleEvent();
         conferenceEvent.sendInvitations();
+
+        Event event1 = new ConferenceEvent();
+
+        ConferenceEvent conferenceEvent1 = (ConferenceEvent) event1;
+        System.out.println(conferenceEvent1);
     }
 }

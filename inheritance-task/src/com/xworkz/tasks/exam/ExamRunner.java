@@ -9,5 +9,10 @@ public class ExamRunner {
         MidTerm midTerm = new MidTerm();
         midTerm.examStartDate();
         midTerm.examEndDate();
+
+        Exam exam1 = new MidTerm();
+
+        MidTerm midTerm1 = (MidTerm) exam1;
+        System.out.println(midTerm1);
     }
 }

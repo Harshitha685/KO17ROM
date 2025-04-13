@@ -9,5 +9,10 @@ public class EmergencyRunner {
         Ambulance ambulance = new Ambulance();
         ambulance.logEmergencyDetails();
         ambulance.isCritical();
+
+        Emergency emergency1 = new Ambulance();
+
+        Ambulance ambulance1 = (Ambulance) emergency1;
+        System.out.println(ambulance1);
     }
 }

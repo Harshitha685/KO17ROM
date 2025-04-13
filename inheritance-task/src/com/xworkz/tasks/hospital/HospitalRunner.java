@@ -10,5 +10,9 @@ public class HospitalRunner {
         Apollo apollo = new Apollo();
         apollo.admitPatient();
         apollo.dischargePatient();
+
+        Hospital hospital1 = new Apollo();
+        Apollo apollo1 = (Apollo) hospital1;
+        System.out.println(apollo1);
     }
 }

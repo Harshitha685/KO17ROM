@@ -9,5 +9,10 @@ public class LevelRunner {
         Easy easy = new Easy();
         easy.getGameName();
         easy.gameLevel();
+
+        Level level1 = new Easy();
+
+        Easy easy1 = (Easy) level1;
+        System.out.println(easy1);
     }
 }

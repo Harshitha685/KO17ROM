@@ -9,5 +9,9 @@ public class CourseRunner {
         OnlineCourse onlineCourse = new OnlineCourse();
         onlineCourse.displayCourseInfo();
         onlineCourse.coursePrice();
+
+        Course course1 = new OnlineCourse();
+        OnlineCourse onlineCourse1 = (OnlineCourse) course1;
+        System.out.println(onlineCourse1);
     }
 }

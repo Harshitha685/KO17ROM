@@ -9,6 +9,11 @@ public class PartyRunner {
         BirthdayParty birthdayParty = new BirthdayParty();
         birthdayParty.startParty();
         birthdayParty.endParty();
+
+        Party party1 = new BirthdayParty();
+
+        BirthdayParty birthdayParty1 = (BirthdayParty) party1;
+        System.out.println(birthdayParty1);
     }
 
 

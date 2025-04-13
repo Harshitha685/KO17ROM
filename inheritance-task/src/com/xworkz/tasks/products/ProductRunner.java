@@ -9,5 +9,10 @@ public class ProductRunner {
         Electronics electronics = new Electronics();
         electronics.setProductName();
         electronics.getProductName();
+
+        Products products1 = new Electronics();
+
+        Electronics electronics1 = (Electronics) products1;
+        System.out.println(electronics1);
     }
 }

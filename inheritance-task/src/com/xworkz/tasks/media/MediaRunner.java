@@ -9,5 +9,10 @@ public class MediaRunner {
         Image image = new Image();
         image.mediaName();
         image.displayInfo();
+
+        Media media1 = new Image();
+
+        Image image1 = (Image) media1;
+        System.out.println(image1);
     }
 }

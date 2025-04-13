@@ -9,5 +9,10 @@ public class TransportRunner {
         Flight flight = new Flight();
         flight.getTransportInfo();
         flight.displayFlightDetails();
+
+        Transport transport1 = new Flight();
+
+        Flight flight1 = (Flight) transport1;
+        System.out.println(flight1);
     }
 }

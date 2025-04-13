@@ -9,5 +9,10 @@ public class MobileRunner {
         SmartPhone smartPhone = new SmartPhone();
         smartPhone.installApp();
         smartPhone.uninstallApp();
+
+        Mobile mobile1 = new SmartPhone();
+
+        SmartPhone smartPhone1 = (SmartPhone) mobile1;
+        System.out.println(smartPhone1);
     }
 }

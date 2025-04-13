@@ -9,5 +9,10 @@ public class ShipmentRunner {
         ExpressShipment expressShipment = new ExpressShipment();
         expressShipment.trackShipment();
         expressShipment.printShipmentDetails();
+
+        Shipment shipment1 = new ExpressShipment();
+
+        ExpressShipment expressShipment1 = (ExpressShipment) shipment1;
+        System.out.println(expressShipment1);
     }
 }

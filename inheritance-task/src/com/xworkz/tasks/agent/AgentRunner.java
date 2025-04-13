@@ -9,5 +9,10 @@ public class AgentRunner {
         SalesAgent salesAgent = new SalesAgent();
         salesAgent.registerAgent();
         salesAgent.isEligibleForBonus();
+
+        Agent agent1 = new SalesAgent();
+
+        SalesAgent salesAgent1 = (SalesAgent) agent1;
+        System.out.println(salesAgent1);
     }
 }

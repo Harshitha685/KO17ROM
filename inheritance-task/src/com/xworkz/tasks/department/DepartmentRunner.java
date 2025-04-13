@@ -9,5 +9,10 @@ public class DepartmentRunner {
         HRDepartment hrDepartment = new HRDepartment();
         hrDepartment.assignManager();
         hrDepartment.isDepartmentActive();
+
+        Department department1 = new HRDepartment();
+
+        HRDepartment hrDepartment1 = (HRDepartment) department1;
+        System.out.println(hrDepartment1);
     }
 }

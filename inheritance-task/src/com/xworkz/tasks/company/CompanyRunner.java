@@ -9,5 +9,10 @@ public class CompanyRunner {
         ITCompany itCompany = new ITCompany();
         itCompany.registerCompany();
         itCompany.displayCompanyInfo();
+
+        Company company1 = new ITCompany();
+
+        ITCompany itCompany1 =(ITCompany) company1;
+        System.out.println(itCompany1);
     }
 }

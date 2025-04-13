@@ -10,5 +10,10 @@ public class CameraRunner {
         MobileCamera mobileCamera = new MobileCamera();
         mobileCamera.cameraName();
         mobileCamera.qualityInfo();
+
+        Camera camera1 = new MobileCamera();
+
+        MobileCamera mobileCamera1 = (MobileCamera) camera1;
+        System.out.println(mobileCamera1);
     }
 }

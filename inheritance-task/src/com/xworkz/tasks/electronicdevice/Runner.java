@@ -9,5 +9,10 @@ public class Runner {
         Laptop laptop = new Laptop();
         laptop.restartDevice();
         laptop.updateSoftware();
+
+        ElectronicDevice device1 = new Laptop();
+
+        Laptop laptop1 =(Laptop) device1;
+        System.out.println(laptop1);
     }
 }

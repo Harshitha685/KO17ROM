@@ -9,5 +9,10 @@ public class EmployeeRunner {
         PoliceOfficer policeOfficer = new PoliceOfficer();
         policeOfficer.employeeName();
         policeOfficer.employeeType();
+
+        Employee employee1 = new PoliceOfficer();
+
+        PoliceOfficer policeOfficer1 = (PoliceOfficer) employee1;
+        System.out.println(policeOfficer1);
     }
 }

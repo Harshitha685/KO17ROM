@@ -9,5 +9,10 @@ public class UserRunner {
         Seller seller = new Seller();
         seller.setUserName();
         seller.getUserName();
+
+        User user1 = new Seller();
+
+        Seller seller1 = (Seller) user1;
+        System.out.println(seller1);
     }
 }

@@ -9,5 +9,10 @@ public class ShoppingRunner {
         OnlineShopping onlineShopping = new OnlineShopping();
         onlineShopping.addItemToCart();
         onlineShopping.removeItemFromCart();
+
+        Shopping shopping1  = new OnlineShopping();
+
+        OnlineShopping onlineShopping1 = (OnlineShopping) shopping1;
+        System.out.println(onlineShopping1);
     }
 }

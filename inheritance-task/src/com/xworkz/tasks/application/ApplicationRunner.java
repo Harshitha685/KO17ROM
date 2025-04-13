@@ -9,5 +9,10 @@ public class ApplicationRunner {
         WebApplication webApplication = new WebApplication();
         webApplication.approveApplication();
         webApplication.submitApplication();
+
+        Application application1 = new WebApplication();
+
+        WebApplication webApplication1 = (WebApplication) application1;
+        System.out.println(webApplication1);
     }
 }

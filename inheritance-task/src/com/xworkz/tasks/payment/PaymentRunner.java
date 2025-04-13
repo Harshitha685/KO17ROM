@@ -9,5 +9,10 @@ public class PaymentRunner {
         UPIPayment upiPayment = new UPIPayment();
         upiPayment.processPayment();
         upiPayment.cancelPayment();
+
+        Payment payment1 = new UPIPayment();
+
+        UPIPayment upiPayment1 = (UPIPayment) payment1;
+        System.out.println(upiPayment1);
     }
 }

@@ -9,5 +9,10 @@ public class AppRunner {
         MusicApp musicApp = new MusicApp();
         musicApp.appName();
         musicApp.appDetails();
+
+        App app1 = new MusicApp();
+
+        MusicApp musicApp1 = (MusicApp) app1;
+        System.out.println(musicApp1);
     }
 }

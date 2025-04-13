@@ -9,5 +9,10 @@ public class LoanRunner {
         HomeLoan homeLoan = new HomeLoan();
         homeLoan.loanType();
         homeLoan.getLoanInfo();
+
+        Loan loan1 = new HomeLoan();
+
+        HomeLoan homeLoan1 = (HomeLoan) loan1;
+        System.out.println(loan1);
     }
 }

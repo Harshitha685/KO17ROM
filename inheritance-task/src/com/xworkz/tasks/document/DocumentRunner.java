@@ -9,5 +9,10 @@ public class DocumentRunner {
         PDF pdf = new PDF();
         pdf.saveDoc();
         pdf.deleteDoc();
+
+        Document document1 = new PDF();
+
+        PDF pdf1 = (PDF) document1;
+        System.out.println(pdf1);
     }
 }
