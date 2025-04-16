@@ -6,10 +6,23 @@ public class InstrumentRunner {
         Instrument instrument = new Instrument();
         instrument.name();
         instrument.displayInstrumentInfo();
+        instrument.powerOn();
+        instrument.powerOff();
+        instrument.calibrate();
+
+        Instrument instrument2 = new Microscope();
+        instrument2.name();
+        instrument2.displayInstrumentInfo();
+        instrument2.powerOn();
+        instrument2.powerOff();
+        instrument2.calibrate();
 
         Microscope microscope = new Microscope();
-        microscope.name();
-        microscope.displayInstrumentInfo();
+        microscope.startScan();
+        microscope.stopScan();
+        microscope.adjustFocus();
+        microscope.adjustZoom();
+        microscope.collectData();
 
         Instrument instrument1 = new Microscope();
         Microscope microscope1 = (Microscope) instrument1;

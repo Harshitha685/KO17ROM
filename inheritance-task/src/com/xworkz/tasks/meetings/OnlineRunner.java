@@ -3,16 +3,34 @@ package com.xworkz.tasks.meetings;
 public class OnlineRunner {
     public static void main(String[] args) {
         Meetings meetings = new Meetings();
-        meetings.meetingName();
         meetings.meetingType();
+        meetings.meetingTime();
+        meetings.participants();
+        meetings.duration();
+        meetings.location();
 
-        OnlineMeetings onlineMeetings = new OnlineMeetings();
-        onlineMeetings.meetingName();
-        onlineMeetings.meetingType();
+        System.out.println("--------------------------");
 
-        Meetings meetings1 = new OnlineMeetings();
+        Meetings meetings2 = new OnlineMeetings();
+        meetings2.meetingType();
+        meetings2.meetingTime();
+        meetings2.participants();
+        meetings2.duration();
+        meetings2.location();
 
-        OnlineMeetings onlineMeetings1 = (OnlineMeetings) meetings1;
-        System.out.println(onlineMeetings1);
+        System.out.println("--------------------------");
+
+        OnlineMeetings online = new OnlineMeetings();
+        online.platformUsed();
+        online.meetingLink();
+        online.screenSharing();
+        online.recordingStatus();
+        online.internetRequired();
+
+        System.out.println("--------------------------");
+
+        Meetings meetings3 = new OnlineMeetings();
+        OnlineMeetings online1 = (OnlineMeetings) meetings3;
+        System.out.println(online1);
     }
 }

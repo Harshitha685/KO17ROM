@@ -5,10 +5,24 @@ public class CourseRunner {
         Course course = new Course();
         course.displayCourseInfo();
         course.coursePrice();
+        course.startCourse();
+        course.endCourse();
+        course.displayCourseInfo();
+
+        Course course2 = new OnlineCourse();
+        course2.displayCourseInfo();
+        course2.coursePrice();
+        course2.startCourse();
+        course2.endCourse();
+        course2.displayCourseInfo();
 
         OnlineCourse onlineCourse = new OnlineCourse();
-        onlineCourse.displayCourseInfo();
-        onlineCourse.coursePrice();
+        onlineCourse. attendLiveSession();
+        onlineCourse.downloadMaterials();
+        onlineCourse.changeLanguage();
+        onlineCourse.contactSupport();
+        onlineCourse.showPlatform();
+
 
         Course course1 = new OnlineCourse();
         OnlineCourse onlineCourse1 = (OnlineCourse) course1;

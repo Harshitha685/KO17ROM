@@ -5,11 +5,24 @@ public class CameraRunner {
         Camera camera = new Camera();
         camera.cameraName();
         camera.qualityInfo();
+        camera.capturePhoto();
+        camera.zoomIn();
+        camera.zoomOut();
+
+        Camera camera2 = new MobileCamera();
+        camera2.cameraName();
+        camera2.qualityInfo();
+        camera2.capturePhoto();
+        camera2.zoomIn();
+        camera2.zoomOut();
 
 
         MobileCamera mobileCamera = new MobileCamera();
-        mobileCamera.cameraName();
-        mobileCamera.qualityInfo();
+        mobileCamera.applyFilter();
+        mobileCamera.enablePortraitMode();
+        mobileCamera.enableHDR();
+        mobileCamera.connectToCloud();
+        mobileCamera.useFaceDetection();
 
         Camera camera1 = new MobileCamera();
 

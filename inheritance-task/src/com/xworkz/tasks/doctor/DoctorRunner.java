@@ -9,10 +9,23 @@ public class DoctorRunner {
         Doctor doctor = new Doctor();
         doctor.prescribeMedicine();
         doctor.writePrescription();
+        doctor.diagnoseDisease();
+        doctor.maintainRecords();
+        doctor.giveFollowUpAdvice();
+
+        Doctor doctor2 = new Surgeon();
+        doctor2.prescribeMedicine();
+        doctor2.writePrescription();
+        doctor2.diagnoseDisease();
+        doctor2.maintainRecords();
+        doctor2.giveFollowUpAdvice();
 
         Surgeon surgeon = new Surgeon();
-        surgeon.prescribeMedicine();
-        surgeon.writePrescription();
+        surgeon.performSurgery();
+        surgeon.sterilizeInstruments();
+        surgeon.useAnesthesia();
+        surgeon.monitorVitals();
+        surgeon.handleEmergencyCases();
 
         Doctor doctor1 = new Surgeon();
 

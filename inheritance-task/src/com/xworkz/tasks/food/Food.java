@@ -9,4 +9,16 @@ public class Food {
     public void isHealthy(){
         System.out.println("Healthy");
     }
+
+    public void prepareFood() {
+        System.out.println("Preparing the food: " );
+    }
+
+    public void cookFood() {
+        System.out.println("Cooking the food: " );
+    }
+
+    public void serveFood() {
+        System.out.println("Serving the food: " );
+    }
 }

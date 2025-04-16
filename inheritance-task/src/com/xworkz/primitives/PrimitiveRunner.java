@@ -2,7 +2,7 @@ package com.xworkz.primitives;
 
 public class PrimitiveRunner {
 
-        public static void main(String pri[]) {
+        public static void main(String[] args) {
 
             //  short <-> byte
             short s1 = 100;

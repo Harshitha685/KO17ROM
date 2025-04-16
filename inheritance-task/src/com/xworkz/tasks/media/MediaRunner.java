@@ -2,17 +2,37 @@ package com.xworkz.tasks.media;
 
 public class MediaRunner {
     public static void main(String[] args) {
+
         Media media = new Media();
-        media.mediaName();
-        media.displayInfo();
+        media.mediaType();
+        media.mediaSize();
+        media.format();
+        media.source();
+        media.isDownloaded();
+
+        System.out.println();
+
+
+        Media media2 = new Image();
+        media2.mediaType();
+        media2.mediaSize();
+        media2.format();
+        media2.source();
+        media2.isDownloaded();
+
 
         Image image = new Image();
-        image.mediaName();
-        image.displayInfo();
+        image.resolution();
+        image.imageFormat();
+        image.applyFilter();
+        image.cropImage();
+        image.imageSize();
 
-        Media media1 = new Image();
+        System.out.println();
 
-        Image image1 = (Image) media1;
+
+        Media media3 = new Image();
+        Image image1 = (Image) media3;
         System.out.println(image1);
     }
 }

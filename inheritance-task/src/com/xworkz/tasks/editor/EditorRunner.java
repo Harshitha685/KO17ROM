@@ -5,10 +5,23 @@ public class EditorRunner {
         Editor editor = new Editor();
         editor.editorName();
         editor.editorType();
+        editor.editContent();
+        editor.saveFile();
+        editor.closeFile();
+
+        Editor editor2 = new PhotoEditor();
+        editor2.editorName();
+        editor2.editorType();
+        editor2.editContent();
+        editor2.saveFile();
+        editor2.closeFile();
 
         PhotoEditor photoEditor = new PhotoEditor();
-        photoEditor.editorName();
-        photoEditor.editorType();
+        photoEditor.applyFilter();
+        photoEditor.cropImage();
+        photoEditor.adjustBrightness();
+        photoEditor.resizeImage();
+        photoEditor.addWatermark();
 
         Editor editor1 = new PhotoEditor();
 

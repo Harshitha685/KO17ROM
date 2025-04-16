@@ -4,15 +4,33 @@ public class OwnerRunner {
     public static void main(String[] args) {
         Owner owner = new Owner();
         owner.ownerName();
-        owner.ownerType();
+        owner.ownerAge();
+        owner.ownerAddress();
+        owner.ownsProperty();
+        owner.idProof();
 
-        CompanyOwner companyOwner = new CompanyOwner();
-        companyOwner.ownerName();
-        companyOwner.ownerType();
+        System.out.println("--------------------------");
 
-        Owner owner1 = new CompanyOwner();
+        Owner owner2 = new CompanyOwner();
+        owner2.ownerName();
+        owner2.ownerAge();
+        owner2.ownerAddress();
+        owner2.ownsProperty();
+        owner2.idProof();
 
-        CompanyOwner companyOwner1 = (CompanyOwner) owner1;
-        System.out.println(companyOwner1);
+        System.out.println("--------------------------");
+
+        CompanyOwner comp = new CompanyOwner();
+        comp.companyName();
+        comp.numberOfEmployees();
+        comp.companyLocation();
+        comp.yearlyRevenue();
+        comp.gstNumber();
+
+        System.out.println("--------------------------");
+
+        Owner owner3 = new CompanyOwner();
+        CompanyOwner comp2 = (CompanyOwner) owner3;
+        System.out.println(comp2);
     }
 }

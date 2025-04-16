@@ -7,4 +7,15 @@ public class Editor {
     public void editorType(){
         System.out.println("Photo editor");
     }
+    public void editContent() {
+        System.out.println("Editing content: ");
+    }
+
+    public void saveFile() {
+        System.out.println("Saving file...");
+    }
+
+    public void closeFile() {
+        System.out.println("Closing the editor.");
+    }
 }

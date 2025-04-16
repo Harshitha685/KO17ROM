@@ -6,10 +6,23 @@ public class EventRunner
         Event event = new Event();
         event.scheduleEvent();
         event.sendInvitations();
+        event.organizeEvent();
+        event.registerAttendees();
+        event.closeEvent();
+
+        Event event2 = new ConferenceEvent();
+        event2.scheduleEvent();
+        event2.sendInvitations();
+        event2.organizeEvent();
+        event2.registerAttendees();
+        event2.closeEvent();
 
         ConferenceEvent conferenceEvent = new ConferenceEvent();
-        conferenceEvent.scheduleEvent();
-        conferenceEvent.sendInvitations();
+        conferenceEvent.conductEvent();
+        conferenceEvent.networkEvent();
+        conferenceEvent.scheduleSessions();
+        conferenceEvent.eventRegistered();
+        conferenceEvent.manageEvent();
 
         Event event1 = new ConferenceEvent();
 

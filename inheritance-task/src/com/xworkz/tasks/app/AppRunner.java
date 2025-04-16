@@ -5,10 +5,23 @@ public class AppRunner {
         App app = new App();
         app.appName();
         app.appDetails();
+        app.open();
+        app.close();
+        app.update();
+
+        App app2 = new MusicApp();
+        app2.appName();
+        app2.appDetails();
+        app2.open();
+        app2.close();
+        app2.update();
 
         MusicApp musicApp = new MusicApp();
-        musicApp.appName();
-        musicApp.appDetails();
+        musicApp.playSong();
+        musicApp.pauseSong();
+        musicApp.createPlaylist();
+        musicApp.likeSong();
+        musicApp.downloadSong();
 
         App app1 = new MusicApp();
 

@@ -7,4 +7,18 @@ public class App {
     public void appDetails(){
         System.out.println("Wynk Music was a music streaming service");
     }
-}
+
+        public void open() {
+            System.out.println("Opening the app...");
+        }
+
+        public void close() {
+            System.out.println("Closing the app...");
+        }
+
+        public void update() {
+            System.out.println("App is updating...");
+        }
+
+    }
+

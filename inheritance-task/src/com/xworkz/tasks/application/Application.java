@@ -9,4 +9,18 @@ public class Application {
     public void approveApplication(){
         System.out.println("Approved");
     }
-}
+
+        public void launch() {
+            System.out.println("Launching application...");
+        }
+
+        public void close() {
+            System.out.println("Closing application...");
+        }
+
+        public void update() {
+            System.out.println("Updating application...");
+        }
+
+    }
+

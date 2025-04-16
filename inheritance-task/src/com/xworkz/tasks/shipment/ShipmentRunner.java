@@ -3,16 +3,34 @@ package com.xworkz.tasks.shipment;
 public class ShipmentRunner {
     public static void main(String[] args) {
         Shipment shipment = new Shipment();
-        shipment.trackShipment();
-        shipment.printShipmentDetails();
+        shipment.shipmentType();
+        shipment.shipmentWeight();
+        shipment.shipmentDestination();
+        shipment.shipmentCost();
+        shipment.shipmentStatus();
+
+        System.out.println("--------------------------");
+
+        Shipment shipment2 = new ExpressShipment();
+        shipment2.shipmentType();
+        shipment2.shipmentWeight();
+        shipment2.shipmentDestination();
+        shipment2.shipmentCost();
+        shipment2.shipmentStatus();
+
+        System.out.println("--------------------------");
 
         ExpressShipment expressShipment = new ExpressShipment();
-        expressShipment.trackShipment();
-        expressShipment.printShipmentDetails();
+        expressShipment.expressDeliveryTime();
+        expressShipment.expressShipmentCost();
+        expressShipment.expressShipmentSpeed();
+        expressShipment.expressTrackingAvailable();
+        expressShipment.expressPriority();
 
-        Shipment shipment1 = new ExpressShipment();
+        System.out.println("--------------------------");
 
-        ExpressShipment expressShipment1 = (ExpressShipment) shipment1;
-        System.out.println(expressShipment1);
+        Shipment shipment3 = new ExpressShipment();
+        ExpressShipment expressShipment2 = (ExpressShipment) shipment3;
+        System.out.println(expressShipment2);
     }
 }

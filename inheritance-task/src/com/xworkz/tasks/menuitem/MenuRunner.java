@@ -1,20 +1,36 @@
 package com.xworkz.tasks.menuitem;
-
-import sun.security.krb5.internal.crypto.Des;
-
+import com.xworkz.tasks.menuitem.MenuItem;
 public class MenuRunner {
     public static void main(String[] args) {
-        MenuItem menuItem = new MenuItem();
-        menuItem.applyDiscount();
-        menuItem.markInStock();
+        MenuItem menu = new MenuItem();
+        menu.menuType();
+        menu.numberOfItems();
+        menu.cuisine();
+        menu.isAvailable();
+        menu.servingTime();
+
+        System.out.println("--------------------------");
+
+        MenuItem menu2 = new Desserts();
+        menu2.menuType();
+        menu2.numberOfItems();
+        menu2.cuisine();
+        menu2.isAvailable();
+        menu2.servingTime();
+
+        System.out.println("--------------------------");
 
         Desserts desserts = new Desserts();
-        desserts.applyDiscount();
-        desserts.markInStock();
+        desserts.sweetName();
+        desserts.sugarFreeOption();
+        desserts.calories();
+        desserts.servingStyle();
+        desserts.price();
 
-        MenuItem menuItem1 = new Desserts();
+        System.out.println("--------------------------");
 
-        Desserts desserts1 = (Desserts) menuItem1;
+        MenuItem menu3 = new Desserts();
+        Desserts desserts1 = (Desserts) menu3;
         System.out.println(desserts1);
     }
 }

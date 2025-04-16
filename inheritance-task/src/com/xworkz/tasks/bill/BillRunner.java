@@ -1,6 +1,7 @@
 package com.xworkz.tasks.bill;
 
-import com.xworkz.tasks.level.Easy;
+import com.xworkz.tasks.bill.Bill;
+import com.xworkz.tasks.bill.*;
 
 public class BillRunner {
 
@@ -8,10 +9,23 @@ public class BillRunner {
         Bill bill = new Bill();
         bill.generateBill();
         bill.isPaid();
+        bill.updateAmount();
+        bill.markAsPaid();
+        bill.setCustomerDetails();
+
+        Bill bill2 = new ElectricityBill();
+        bill2.generateBill();
+        bill2.isPaid();
+        bill2.updateAmount();
+        bill2.markAsPaid();
+        bill2.setCustomerDetails();
 
         ElectricityBill electricityBill = new ElectricityBill();
-        electricityBill.generateBill();
-        electricityBill.isPaid();
+        electricityBill.setElectricityDetails();
+        electricityBill.calculateAmount();
+        electricityBill.showElectricityBill();
+        electricityBill.checkHighUsage();
+        electricityBill.suggestSavingTips();
 
         Bill bill1 = new ElectricityBill();
 

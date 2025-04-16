@@ -10,5 +10,17 @@ public class Instrument {
         System.out.println("Used in research");
     }
 
+    public void powerOn() {
+        System.out.println( "is powered on.");
+    }
+
+    public void powerOff() {
+        System.out.println(" is powered off.");
+    }
+
+    public void calibrate() {
+        System.out.println( " is being calibrated.");
+    }
+
 
 }

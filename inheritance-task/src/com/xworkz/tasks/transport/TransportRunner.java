@@ -3,16 +3,34 @@ package com.xworkz.tasks.transport;
 public class TransportRunner {
     public static void main(String[] args) {
         Transport transport = new Transport();
-        transport.displayFlightDetails();
-        transport.getTransportInfo();
+        transport.transportType();
+        transport.transportMode();
+        transport.transportSpeed();
+        transport.transportFare();
+        transport.transportDistance();
+
+        System.out.println("--------------------------");
+
+        Transport transport2 = new Flight();
+        transport2.transportType();
+        transport2.transportMode();
+        transport2.transportSpeed();
+        transport2.transportFare();
+        transport2.transportDistance();
+
+        System.out.println("--------------------------");
 
         Flight flight = new Flight();
-        flight.getTransportInfo();
-        flight.displayFlightDetails();
+        flight.flightType();
+        flight.flightAirline();
+        flight.flightDuration();
+        flight.flightFare();
+        flight.flightSeatClass();
 
-        Transport transport1 = new Flight();
+        System.out.println("--------------------------");
 
-        Flight flight1 = (Flight) transport1;
-        System.out.println(flight1);
+        Transport transport3 = new Flight();
+        Flight flight2 = (Flight) transport3;
+        System.out.println(flight2);
     }
 }

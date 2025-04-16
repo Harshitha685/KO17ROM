@@ -3,16 +3,34 @@ package com.xworkz.tasks.user;
 public class UserRunner {
     public static void main(String[] args) {
         User user = new User();
-        user.getUserName();
-        user.setUserName();
+        user.userName();
+        user.userAge();
+        user.userEmail();
+        user.userPhone();
+        user.userLocation();
+
+        System.out.println("--------------------------");
+
+        User user2 = new Seller();
+        user2.userName();
+        user2.userAge();
+        user2.userEmail();
+        user2.userPhone();
+        user2.userLocation();
+
+        System.out.println("--------------------------");
 
         Seller seller = new Seller();
-        seller.setUserName();
-        seller.getUserName();
+        seller.sellerBusinessName();
+        seller.sellerProduct();
+        seller.sellerRating();
+        seller.sellerExperience();
+        seller.sellerIncome();
 
-        User user1 = new Seller();
+        System.out.println("--------------------------");
 
-        Seller seller1 = (Seller) user1;
-        System.out.println(seller1);
+        User user3 = new Seller();
+        Seller seller2 = (Seller) user3;
+        System.out.println(seller2);
     }
 }

@@ -3,16 +3,34 @@ package com.xworkz.tasks.payment;
 public class PaymentRunner {
     public static void main(String[] args) {
         Payment payment = new Payment();
-        payment.processPayment();
-        payment.cancelPayment();
+        payment.paymentType();
+        payment.amount();
+        payment.transactionDate();
+        payment.paymentStatus();
+        payment.paymentMethod();
+
+        System.out.println("--------------------------");
+
+        Payment payment2 = new UPIPayment();
+        payment2.paymentType();
+        payment2.amount();
+        payment2.transactionDate();
+        payment2.paymentStatus();
+        payment2.paymentMethod();
+
+        System.out.println("--------------------------");
 
         UPIPayment upiPayment = new UPIPayment();
-        upiPayment.processPayment();
-        upiPayment.cancelPayment();
+        upiPayment.upiId();
+        upiPayment.transactionReference();
+        upiPayment.bankName();
+        upiPayment.isInstantPayment();
+        upiPayment.paymentApp();
 
-        Payment payment1 = new UPIPayment();
+        System.out.println("--------------------------");
 
-        UPIPayment upiPayment1 = (UPIPayment) payment1;
-        System.out.println(upiPayment1);
+        Payment payment3 = new UPIPayment();
+        UPIPayment upiPayment2 = (UPIPayment) payment3;
+        System.out.println(upiPayment2);
     }
 }

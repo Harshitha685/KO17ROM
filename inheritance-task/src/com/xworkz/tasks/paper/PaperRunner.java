@@ -3,16 +3,34 @@ package com.xworkz.tasks.paper;
 public class PaperRunner {
     public static void main(String[] args) {
         Paper paper = new Paper();
-        paper.printPaper();
-        paper.submitPaper();
+        paper.paperType();
+        paper.paperSize();
+        paper.color();
+        paper.gsm();
+        paper.isRecycled();
 
-        NewsPaper newsPaper = new NewsPaper();
-        newsPaper.printPaper();
-        newsPaper.submitPaper();
+        System.out.println("--------------------------");
 
-        Paper paper1 = new NewsPaper();
+        Paper paper2 = new NewsPaper();
+        paper2.paperType();
+        paper2.paperSize();
+        paper2.color();
+        paper2.gsm();
+        paper2.isRecycled();
 
-        NewsPaper newsPaper1 = (NewsPaper) paper1;
-        System.out.println(newsPaper1);
+        System.out.println("--------------------------");
+
+        NewsPaper news = new NewsPaper();
+        news.publicationName();
+        news.dailyEdition();
+        news.price();
+        news.language();
+        news.totalPages();
+
+        System.out.println("--------------------------");
+
+        Paper paper3 = new NewsPaper();
+        NewsPaper news2 = (NewsPaper) paper3;
+        System.out.println(news2);
     }
 }

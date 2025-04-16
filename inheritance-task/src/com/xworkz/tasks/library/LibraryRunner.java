@@ -3,16 +3,28 @@ package com.xworkz.tasks.library;
 public class LibraryRunner {
     public static void main(String[] args) {
         Library library = new Library();
-        library.libraryName();
-        library.libraryType();
+        library.getLibraryName();
+        library.openLibrary();
+        library.issueBook();
+        library.returnBook();
+        library.displaySections();
 
-        DigitalLibrary digitalLibrary = new DigitalLibrary();
-        digitalLibrary.libraryName();
-        digitalLibrary.libraryType();
+        Library library2 = new DigitalLibrary();
+        library2.getLibraryName();
+        library2.openLibrary();
+        library2.issueBook();
+        library2.returnBook();
+        library2.displaySections();
 
-        Library library1 = new DigitalLibrary();
+        DigitalLibrary digital = new DigitalLibrary();
+        digital.accessEBook();
+        digital.playAudioBook();
+        digital.downloadPdf();
+        digital.loginToPortal();
+        digital.searchDigitalContent();
 
-        DigitalLibrary digitalLibrary1 = (DigitalLibrary) library1;
-        System.out.println(digitalLibrary1);
+        Library library3 = new DigitalLibrary();
+        DigitalLibrary digital1 = (DigitalLibrary) library3;
+        System.out.println(digital1);
     }
 }

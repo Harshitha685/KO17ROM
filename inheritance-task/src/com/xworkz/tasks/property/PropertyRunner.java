@@ -3,16 +3,34 @@ package com.xworkz.tasks.property;
 public class PropertyRunner {
     public static void main(String[] args) {
         Property property = new Property();
-        property.sellProperty();
-        property.rentProperty();
+        property.propertyType();
+        property.propertyLocation();
+        property.propertySize();
+        property.propertyPrice();
+        property.isAvailable();
+
+        System.out.println("--------------------------");
+
+        Property property2 = new Apartment();
+        property2.propertyType();
+        property2.propertyLocation();
+        property2.propertySize();
+        property2.propertyPrice();
+        property2.isAvailable();
+
+        System.out.println("--------------------------");
 
         Apartment apartment = new Apartment();
-        apartment.sellProperty();
-        apartment.rentProperty();
+        apartment.apartmentName();
+        apartment.numberOfBedrooms();
+        apartment.floorNumber();
+        apartment.parkingAvailable();
+        apartment.amenities();
 
-        Property property1 = new Apartment();
+        System.out.println("--------------------------");
 
-        Apartment apartment1 = (Apartment) property1;
-        System.out.println(apartment1);
+        Property property3 = new Apartment();
+        Apartment apartment2 = (Apartment) property3;
+        System.out.println(apartment2);
     }
 }

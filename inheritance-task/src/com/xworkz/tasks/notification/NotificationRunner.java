@@ -2,17 +2,35 @@ package com.xworkz.tasks.notification;
 
 public class NotificationRunner {
     public static void main(String[] args) {
-        Notification notification = new Notification();
-        notification.notificationType();
-        notification.checkInfo();
+        Notification notifi = new Notification();
+        notifi.notifiType();
+        notifi.message();
+        notifi.priority();
+        notifi.timeReceived();
+        notifi.isRead();
 
-        EmailNotification emailNotification = new EmailNotification();
-        emailNotification.notificationType();
-        emailNotification.checkInfo();
+        System.out.println("--------------------------");
 
-        Notification notification1 = new EmailNotification();
+        Notification notifi2 = new EmailNotification();
+        notifi2.notifiType();
+        notifi2.message();
+        notifi2.priority();
+        notifi2.timeReceived();
+        notifi2.isRead();
 
-        EmailNotification emailNotification1 = (EmailNotification) notification1;
-        System.out.println(emailNotification1);
+        System.out.println("--------------------------");
+
+        EmailNotification email = new EmailNotification();
+        email.senderEmail();
+        email.subject();
+        email.hasAttachment();
+        email.emailClient();
+        email.folder();
+
+        System.out.println("--------------------------");
+
+        Notification notifi3 = new EmailNotification();
+        EmailNotification email2 = (EmailNotification) notifi3;
+        System.out.println(email2);
     }
 }

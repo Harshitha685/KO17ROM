@@ -5,10 +5,23 @@ public class Runner {
         ElectronicDevice device = new ElectronicDevice();
         device.restartDevice();
         device.updateSoftware();
+        device.powerOn();
+        device.powerOff();
+        device.showSpecs();
+
+        ElectronicDevice device2 = new Laptop();
+        device2.restartDevice();
+        device2.updateSoftware();
+        device2.powerOn();
+        device2.powerOff();
+        device2.showSpecs();
 
         Laptop laptop = new Laptop();
-        laptop.restartDevice();
-        laptop.updateSoftware();
+        laptop.openIDE();
+        laptop.compileCode();
+        laptop.chargeBattery();
+        laptop.showLaptopDetails();
+        laptop.enableTouchPad();
 
         ElectronicDevice device1 = new Laptop();
 

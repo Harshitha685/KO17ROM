@@ -5,10 +5,23 @@ public class CompanyRunner {
         Company company = new Company();
         company.registerCompany();
         company.displayCompanyInfo();
+        company.hireEmployees();
+        company.payTaxes();
+        company.releaseProduct();
+
+        Company company2 = new ITCompany();
+        company2.registerCompany();
+        company2.displayCompanyInfo();
+        company2.hireEmployees();
+        company2.payTaxes();
+        company2.releaseProduct();
 
         ITCompany itCompany = new ITCompany();
-        itCompany.registerCompany();
-        itCompany.displayCompanyInfo();
+        itCompany.developSoftware();
+        itCompany.testApplication();
+        itCompany.deployProject();
+        itCompany.supportClients();
+        itCompany.updateTechStack();
 
         Company company1 = new ITCompany();
 

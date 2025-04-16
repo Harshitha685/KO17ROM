@@ -5,10 +5,23 @@ public class EmergencyRunner {
         Emergency emergency = new Emergency();
         emergency.logEmergencyDetails();
         emergency.isCritical();
+        emergency.respondToEmergency();
+        emergency.dispatchAmbulance();
+        emergency.arriveAtScene();
+
+        Emergency emergency2 = new Ambulance();
+        emergency2.logEmergencyDetails();
+        emergency2.isCritical();
+        emergency2.respondToEmergency();
+        emergency2.dispatchAmbulance();
+        emergency2.arriveAtScene();
 
         Ambulance ambulance = new Ambulance();
-        ambulance.logEmergencyDetails();
-        ambulance.isCritical();
+        ambulance.provideMedicalAssistance();
+        ambulance.transportToHospital();
+        ambulance.cleanAmbulance();
+        ambulance.emergency();
+        ambulance.trafficFree();
 
         Emergency emergency1 = new Ambulance();
 
