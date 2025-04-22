@@ -18,7 +18,8 @@ public class DominosRunner
             } else {
                 System.out.println("Dominos Registration Failed!");
             }
-            dominos.getUserInfo();
+//            dominos.getUserInfo();
+            System.out.println(user1);
         }
     }
 

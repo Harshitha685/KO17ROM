@@ -18,7 +18,8 @@ public class GitHubRunner
             } else {
                 System.out.println("GitHub Registration Failed!");
             }
-            github.getUserProfile();
+//            github.getUserProfile();
+            System.out.println(user1);
         }
     }
 

@@ -60,4 +60,14 @@ public class MyntraDto {
 //    public String getLocation() {
 //        return location;
 //    }
+ @Override
+ public String toString(){
+  return "MyntraDto={phone number = "+this.phoneNumber+"," +
+          "\nfull name = "+this.fullName+"," +
+          "\nemailId = "+this.emailId+"," +
+          "\ngender = "+this.gender+"," +
+          "\ndob = "+this.dob+"," +
+          "\nlocation = "+this.location+" }";
+
+ }
 }

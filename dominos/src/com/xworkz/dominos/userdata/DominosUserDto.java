@@ -56,6 +56,15 @@ public class DominosUserDto
 //        public String getDeliveryAddress() {
 //            return deliveryAddress;
 //        }
+
+        @Override
+        public String toString(){
+                return "Dominos = (email = "+this.email+"," +
+                        "\nphone no = "+this.phoneNumber+"," +
+                        "\npassword = "+this.password+"," +
+                        "\nfull name = "+this.fullName+"," +
+                        "\ndelivery address = "+this.deliveryAddress+")";
+        }
     }
 
 

@@ -15,7 +15,8 @@ public class LinkedInRunner {
 
             LinkedInSignIn login = new LinkedInSignIn();
             boolean result = login.startSession(user);
-            login.getSignDetails();
+            //login.getSignDetails();
+            System.out.println(user.toString());
         }
     }
 

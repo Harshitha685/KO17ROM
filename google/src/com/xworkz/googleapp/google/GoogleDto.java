@@ -54,6 +54,15 @@ public class GoogleDto {
 //    public String getConfirmPassword() {
 //        return confirmPassword;
 //    }
+        @Override
+        public String toString(){
+                return "GoogleDto-[email = "+this.email+"," +
+                        "\nphone no = "+this.phoneNumber+"," +
+                        "\nuser name = "+this.username+"," +
+                        "\npassword = "+this.password+"," +
+                        "\nconfirm password = "+this.confirmPassword+"]";
+
+        }
 
 }
 

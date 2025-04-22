@@ -19,7 +19,8 @@ public class FaceBookRunner
             } else {
                 System.out.println("Facebook Registration Failed!");
             }
-            facebook.getUserData();
+//            facebook.getUserData();
+            System.out.println(user1);
         }
     }
 

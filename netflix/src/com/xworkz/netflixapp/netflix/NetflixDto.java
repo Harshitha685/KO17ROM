@@ -62,6 +62,15 @@ public class NetflixDto {
 //        public long getMobileNumber() {
 //            return mobileNumber;
 //        }
+@Override
+        public String toString(){
+                return "NetflixDto=(user id = "+this.userId+"," +
+                        "\nuser name = "+this.userName+"," +
+                        "\nemail = "+this.email+"," +
+                        "\npassword = "+this.password+"," +
+                        "\nconfirm password = "+this.confirmPassword+"," +
+                        "\nmobile number = "+this.mobileNumber+")";
+        }
     }
 
 

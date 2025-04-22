@@ -62,6 +62,11 @@ public class MicroSoftDto {
 //        public long getMobileNumber() {
 //            return mobileNumber;
 //        }
+
+        @Override
+        public String toString(){
+                return "MicroSoftDto=[userid = "+this.userId+"," +"\nname = "+this.name+"," +"\nemail = "+this.email+"," +"\npassword = "+this.password+"," +"\nconfirm password = "+this.confirmPassword+","+"\nmobile number = "+this.mobileNumber+"]";
+        }
     }
 
 

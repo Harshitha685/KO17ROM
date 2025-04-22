@@ -18,7 +18,8 @@ public class FlipKartRunner
             } else {
                 System.out.println("Flipkart Registration Failed!");
             }
-            flipkart.getUserDetails();
+//            flipkart.getUserDetails();
+            System.out.println(user1);
         }
     }
 

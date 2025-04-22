@@ -60,6 +60,15 @@ public class FaceBookUserDto
 //        public String getDateOfBirth() {
 //            return dateOfBirth;
 //        }
+
+        @Override
+        public String toString(){
+                return "FaceBookUserDto-(email = "+this.email+"," +
+                        "\nphone number = "+this.phoneNumber+"," +
+                        "\npassword = "+this.password+"," +
+                        "\nfull name = "+this.fullName+"," +
+                        "\ndob = "+this.dateOfBirth+")";
+        }
     }
 
 

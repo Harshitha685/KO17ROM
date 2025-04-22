@@ -42,4 +42,11 @@ public class NykaaDto {
 //    public String getPassWord() {
 //        return passWord;
 //    }
+@Override
+    public String toString(){
+        return "NykaaDto:(emailId = "+this.emailId+"," +
+                "\nname = "+this.name+"," +
+                "\nmobile number = "+this.mobileNumber+"," +
+                "\npassword = "+this.passWord+")";
+    }
 }

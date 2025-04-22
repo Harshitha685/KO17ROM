@@ -23,7 +23,8 @@ public class NykaaRunner {
         else{
             System.out.println("User Login unsuccessful");
         }
-        logIn.getUserLogin();
+        //logIn.getUserLogin();
+        System.out.println(nykaaDto);
     }
     }
 

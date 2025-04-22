@@ -15,7 +15,8 @@ public class NetFlixRunner {
 
             NetflixUserSignin login = new NetflixUserSignin();
             boolean status = login.attemptLogin(user);
-            login.getNetflixUserDetails();
+            //login.getNetflixUserDetails();
+            System.out.println(user.toString());
         }
     }
 

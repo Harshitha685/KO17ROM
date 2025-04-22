@@ -22,7 +22,8 @@ public class GoogleRunner {
             } else {
                 System.out.println("Login failed ");
             }
-            googleSignIn.getUserData();
+//            googleSignIn.getUserData();
+            System.out.println(googleDto);
         }
     }
 

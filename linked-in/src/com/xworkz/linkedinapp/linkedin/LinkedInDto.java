@@ -63,6 +63,15 @@ public class LinkedInDto {
 //        public long getContactNumber() {
 //            return contactNumber;
 //        }
+        @Override
+        public String toString(){
+                return "LinkedInDto = [username - "+this.username+"," +
+                        "\nfull name - "+this.fullName+"," +
+                        "\nemail - "+this.email+"," +
+                        "\npassword - "+this.password+"," +
+                        "\nconfirm password - "+this.confirmPassword+"," +
+                        "\ncontact no - "+this.contactNumber+"]";
+        }
     }
 
 

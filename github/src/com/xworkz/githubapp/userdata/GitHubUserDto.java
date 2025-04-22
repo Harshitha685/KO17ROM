@@ -59,6 +59,16 @@ public class GitHubUserDto
 //        public String getBio() {
 //            return bio;
 //        }
+
+        @Override
+
+        public String toString(){
+                return "GitHubUserDto = (email = "+this.email+"," +
+                        "\nuser name = "+this.userName+"," +
+                        "\npassword = "+this.password+"," +
+                        "\nfull name = "+this.fullName+"," +
+                        "\nbio = "+this.bio+")";
+        }
     }
 
 

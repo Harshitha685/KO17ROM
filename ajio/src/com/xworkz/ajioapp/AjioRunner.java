@@ -13,13 +13,14 @@ public class AjioRunner
             user.setGender("Female");
 
             Ajio ajio = new Ajio();
+            //ajio.getUserDetails();
             if (ajio.userSignUp(user)) {
                 System.out.println("Ajio Registration Successful!");
             } else {
                 System.out.println("Ajio Registration Failed!");
             }
-            ajio.getUserDetails();
+            System.out.println(user.toString());
         }
-    }
+}
 
 

@@ -24,5 +24,6 @@ public class SnapDealRunner {
         } else {
             System.out.println(" Registration Unsuccessful");
         }
+        System.out.println(snapDealDto.toString());
     }
 }

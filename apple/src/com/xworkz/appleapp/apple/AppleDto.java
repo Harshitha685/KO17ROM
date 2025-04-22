@@ -62,6 +62,17 @@ public class AppleDto {
 //    public long getContactNumber() {
 //        return contactNumber;
 //    }
+
+    @Override
+    public String toString(){
+        return "AppleDto = (email = "+this.email+"," +
+                "\nuser name = "+this.userName+"," +
+                "\npassword = "+this.password+"," +
+                "\nuser name = "+this.userName+"," +
+                "\nconfirm password = "+this.confirmPassword+"," +
+                "\napple id = "+this.appleId+"," +
+                "\n contact no = "+this.contactNumber+")";
+    }
 }
 
 

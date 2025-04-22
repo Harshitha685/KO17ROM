@@ -42,4 +42,12 @@ public class EbayDto {
 //    public String getPassWord() {
 //        return passWord;
 //    }
+@Override
+    public String toString(){
+        return "EbayDto:(firstName: "+this.firstName+"," +
+                "\nlastName:"+this.lastName+"," +
+                "\nemail:"+this.email+"," +
+                "\npassword:"+this.passWord+")";
+
+    }
 }

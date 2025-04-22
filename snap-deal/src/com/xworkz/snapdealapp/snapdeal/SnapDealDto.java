@@ -52,6 +52,14 @@ public class SnapDealDto {
 //        public String getPassWord() {
 //            return passWord;
 //        }
+@Override
+        public  String toString(){
+                return "SnapDealDto:(emailId="+this.emailId+"," +
+                        "\nmobile number="+this.mobileNumber+"," +
+                        "\nname="+this.name+"," +
+                        "\ndob="+this.dob+"," +
+                        "\npassword="+this.passWord+")";
+        }
 
     }
 

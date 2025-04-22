@@ -58,6 +58,15 @@ public class FlipKartUserDto
 //        public String getShippingAddress() {
 //            return shippingAddress;
 //        }
+
+        @Override
+        public String toString(){
+                return "FlipKartUserDto = (email = "+this.email+"," +
+                        "\nphone no = "+this.phoneNumber+"," +
+                        "\npassword = "+this.password+"," +
+                        "\nfull name = "+this.fullName+"," +
+                        "\nshipping address = "+this.shippingAddress+")";
+        }
     }
 
 

@@ -59,4 +59,13 @@ public class UserDataDto
 //    {
 //        return userName;
 //    }
+
+    @Override
+    public String toString(){
+        return "UserDataDto-{email - "+this.email+"," +
+                "\ndob - "+this.dob+"," +
+                "\npassword - "+this.password+"," +
+                "\nname - "+this.name+"," +
+                "\nuser name - "+this.userName+" }";
+    }
 }

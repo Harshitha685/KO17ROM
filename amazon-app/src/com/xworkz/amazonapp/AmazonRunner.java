@@ -15,12 +15,13 @@ public class AmazonRunner {
 
         AmazonLogin amazonLogin = new AmazonLogin();
         boolean ref = amazonLogin.signIn(amazonDto);
-    amazonLogin.getUserData();
+    //amazonLogin.getUserData();
         if (ref == true) {
             System.out.println("User signIn successful");
         } else {
             System.out.println("User signIn unsuccessful");
         }
+        System.out.println(amazonDto.toString());
 
 
     }

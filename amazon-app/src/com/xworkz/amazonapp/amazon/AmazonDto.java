@@ -51,4 +51,13 @@ public class AmazonDto {
 //    public String getConfirmPassword() {
 //        return confirmPassword;
 //    }
+
+    @Override
+    public String toString(){
+        return "AmazonDto:(emailId:"+this.emailId+"," +
+                "\n phoneNumber:"+this.phoneNumber+"," +
+                "\n fullName:"+this.fullName+"," +
+                "\n password:"+this.password+"," +
+                "\n confirmPassword:"+this.confirmPassword+")";
+    }
 }

@@ -57,6 +57,16 @@ public class AjioUserDto
 //        public String getGender() {
 //            return gender;
 //        }
+@Override
+public String toString() {
+        return "AjioUserDto(email:" + this.email + "," +
+                "\n mobileNumber:" + this.mobileNumber + "," +
+                "\n password:" + this.password + "," +
+                "\n fullName:" + this.fullName + "," +
+                "\n gender:" + this.gender + ")";
+
+
+}
     }
 
 
